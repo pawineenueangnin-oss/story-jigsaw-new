@@ -3,16 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="google" content="notranslate" />
-  <meta name="theme-color" content="#120b22" />
+  <meta name="theme-color" content="#2b1a0e" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-  <title>Story Jigsaw</title>
+  <title>Story Jigsaw Tales</title>
+  <meta name="description" content="Picture stories to piece together – six 3D story jigsaws for kids in 21 languages." />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Jigsaw Swap" />
-  <meta property="og:description" content="Tap-to-swap jigsaw — Easy, Medium, Hard, or use your own photo" />
-  <meta property="og:image" content="https://artisikengames.com/story-jigsaw/og.png" />
+  <meta property="og:title" content="Story Jigsaw Tales" />
+  <meta property="og:description" content="Picture stories to piece together – six 3D story jigsaws for kids in 21 languages." />
+  <meta property="og:url" content="https://pawineenueangnin-oss.github.io/story-jigsaw-new/" />
+  <meta property="og:image" content="https://pawineenueangnin-oss.github.io/story-jigsaw-new/branding/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://pawineenueangnin-oss.github.io/story-jigsaw-new/branding/og.jpg" />
   <meta name="twitter:card" content="summary_large_image" />
 
   <style>
@@ -61,7 +66,7 @@
     .bar > i { display: block; height: 100%; width: 6%; background: linear-gradient(90deg,#7a4dff,var(--gold)); transition: width .2s ease; }
     #pct { margin-top: 8px; color: var(--gold); font-weight: 700; }
     #menu {
-      background:#0a2a18 url("puzzle-art/14e0c4db0f126e91c2d0fd3a.jpg") center / cover no-repeat;
+      background:#0a2a18 url("branding/loader-1.webp") center / cover no-repeat;
       padding: 0 !important;
     }
     #menu .card {
@@ -826,7 +831,12 @@
 @media(max-width:340px){.story-mode #picker #grid{gap:10px}.story-mode #picker #grid .stage .name{font-size:12px;padding:7px 8px 3px}#storyStagePager button{min-width:79px;font-size:12px}.story-mode #picker .topbar h1{font-size:17px}}
 @media(orientation:landscape) and (max-height:600px){.story-mode #picker #grid{width:min(100%,1000px);grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.story-mode #picker .topbar,#storyStagePager{width:min(100%,1000px)}.story-mode #picker .topbar{min-height:44px}.story-mode #picker{gap:6px}}
 </style>
-<link rel="icon" type="image/png" href="branding/story-icon.png">
+<link rel="icon" href="branding/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="branding/favicon-32.png">
+<link rel="apple-touch-icon" href="branding/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<script src="config.js"></script>
+<script src="i18n/ui.js"></script>
 <style id="storyBrandingAndLanguages">
 #loader{padding:0!important;background:#092519 url('branding/loading.webp') center/cover no-repeat!important;display:flex;justify-content:space-between;align-items:center;flex-direction:column;overflow:hidden}#loader.hide{display:none!important}.loading-title{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;width:100%;padding:calc(22px + env(safe-area-inset-top)) 16px 18px;background:linear-gradient(#03160fea,transparent)}.loading-title img{width:58px;height:58px;border-radius:15px;box-shadow:0 0 20px #e7bc6944}.loading-title h1{margin:0;font:800 clamp(25px,6vw,40px) system-ui;color:#ffe4a0;text-shadow:0 2px 10px #000}.loading-progress{width:100%;padding:35px max(25px,calc((100% - 400px)/2)) calc(25px + env(safe-area-inset-bottom));background:linear-gradient(transparent,#031b12f5);text-align:center;color:#fff0c9;font:14px system-ui}#loader .bar{height:12px;background:#133a29;border:1px solid #a28d53;border-radius:20px;overflow:hidden}#loader #bar{background:linear-gradient(90deg,#cda14a,#ffec9b);box-shadow:0 0 18px #ffc742}#loader #pct{margin-top:8px;color:#ffe4a0}#languageBar{display:flex;justify-content:center;align-items:center;gap:6px;padding:6px;margin:0 auto 12px}#languageBar button{min-height:42px!important;min-width:66px;border-radius:12px;font:700 13px system-ui;padding:8px;background:#254c36;color:#f6e8bf;border:1px solid #809565}#languageBar button[aria-pressed="true"]{background:linear-gradient(#ffe4a0,#d7ab57);color:#203727;border-color:#ffe4a0}.story-library-grid .story-book.coming:last-child{grid-column:auto;display:flex;min-height:105px}.story-book.available strong{font-size:17px;line-height:1.2;overflow-wrap:anywhere}.story-book.available{grid-template-columns:100px minmax(0,1fr)}#storyDetail>.story-cover{display:block;width:100%;height:clamp(150px,24dvh,260px);object-fit:cover;object-position:center 40%;background:#0b2619}.story-hub{max-width:550px}.story-mode #picker #grid .stage .name{min-height:46px}.story-dialog h2{overflow-wrap:anywhere}.story-panel h2{font-size:clamp(18px,5vw,23px)}.story-panel p{overflow-wrap:anywhere}#storyDetail>h1{font-size:clamp(23px,6vw,32px);line-height:1.2}
 @media(orientation:landscape){#loader{background-size:contain;background-color:#092519!important}.loading-title{justify-content:flex-start;padding:12px 20px}.loading-title img{width:44px;height:44px}.loading-title h1{font-size:25px}.loading-progress{padding-top:10px;padding-bottom:14px}}
@@ -905,9 +915,33 @@
 #settingsDialog #muteBtn{min-height:44px;min-width:70px;background:#345c3c;color:#fff0cb;box-shadow:none}#settingsDialog .settings-extra{display:flex;justify-content:center;gap:8px;margin:10px 0}
 @media(orientation:landscape) and (max-height:600px){#play{display:grid;max-width:1000px;grid-template-columns:minmax(190px,32%) minmax(0,1fr);grid-template-rows:44px auto 49px minmax(0,1fr) 56px;gap:7px 18px;align-content:center;align-items:center}#play .play-nav{grid-column:1;grid-row:1}#play #storyMission{grid-column:1;grid-row:2}#play .hud{grid-column:1;grid-row:3}#play .guide{grid-column:1;grid-row:4/6;height:auto;flex-wrap:wrap;justify-content:center;gap:7px}#play .polish-actions{flex-basis:100%;justify-content:center;gap:6px}#play .polish-actions #hintBtn{flex:1;max-width:150px;padding:7px}#play .board-wrap{grid-column:2;grid-row:1/6;width:min(100%,calc(var(--game-height,100dvh) - 24px));align-self:center;margin:auto}#play .topbar h1{font-size:14px;order:0;flex-basis:auto;margin:0}}
 </style>
+<style id="taleLoader">
+#loader{background:#2b1a0e!important}
+#loader .loader-slides{position:absolute;inset:0;overflow:hidden;z-index:0}
+#loader .loader-slides i{position:absolute;inset:-4%;background:center/cover no-repeat;opacity:0;animation:taleSlide 21s infinite}
+#loader .loader-slides i:nth-child(2){animation-delay:3.5s}#loader .loader-slides i:nth-child(3){animation-delay:7s}#loader .loader-slides i:nth-child(4){animation-delay:10.5s}#loader .loader-slides i:nth-child(5){animation-delay:14s}#loader .loader-slides i:nth-child(6){animation-delay:17.5s}
+#loader .loader-slides i:first-child{opacity:1}
+@keyframes taleSlide{0%{opacity:0;transform:scale(1.08)}5%{opacity:1}17%{opacity:1}24%{opacity:0;transform:scale(1)}100%{opacity:0}}
+#loader .loader-slides:after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,transparent 35%,#1d0f05aa 100%)}
+#loader .loading-title,#loader .loading-progress{z-index:1}
+#loader .loading-title{background:linear-gradient(#2b1606f0,#2b160699 70%,transparent)!important;padding-bottom:34px!important}
+#loader .loading-title img{border:3px solid #f0c75e;border-radius:18px}
+#loader .loading-title h1{font-family:Georgia,"Times New Roman",serif!important;letter-spacing:.5px;color:#ffe29a!important}
+#loader .loader-tag{margin:2px 0 0;color:#fff1d6;font:600 13px system-ui;text-shadow:0 1px 6px #000}
+#loader .loading-progress{background:linear-gradient(transparent,#2b1606f2 45%)!important}
+#loader .bar{height:16px!important;background:#3d2410!important;border:2px solid #e9c26f!important;box-shadow:inset 0 2px 4px #0008}
+#loader #bar{display:block;height:100%;width:0;transition:width .35s ease;background:repeating-linear-gradient(45deg,#ffd77a 0 12px,#f3b84b 12px 24px)!important;border-radius:20px}
+#loader #loadText{color:#fff4dc;font-weight:700;text-shadow:0 1px 4px #000}
+@media(prefers-reduced-motion:reduce){#loader .loader-slides i{animation:none}}
+[dir=rtl] #play .topbar h1,[dir=rtl] #storyDetail .story-difficulties button{text-align:right}
+#languageBar{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:6px;max-height:min(60vh,520px);overflow:auto}
+#languageBar>span{display:none}
+#languageBar button{min-width:0!important;width:100%;font-size:14px!important}
+</style>
 </head>
 <body>
-  <section class="screen" id="loader"><div class="loading-title"><img src="branding/story-icon.webp" alt="Story Jigsaw"><h1>Story Jigsaw</h1></div><div class="loading-progress"><p id="loadText">Loading game...</p><div class="bar"><i id="bar"></i></div><div id="pct">0%</div></div></section>
+  <section class="screen" id="loader"><div class="loader-slides" aria-hidden="true"><i style="background-image:url(branding/loader-1.webp)"></i><i style="background-image:url(branding/loader-2.webp)"></i><i style="background-image:url(branding/loader-3.webp)"></i><i style="background-image:url(branding/loader-4.webp)"></i><i style="background-image:url(branding/loader-5.webp)"></i><i style="background-image:url(branding/loader-6.webp)"></i></div><div class="loading-title"><img src="branding/story-icon.webp" alt=""><div><h1 class="game-title" data-ui-localized>Story Jigsaw Tales</h1><p class="loader-tag">Picture stories to piece together</p></div></div><div class="loading-progress"><p id="loadText">Loading game...</p><div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><i id="bar"></i></div><div id="pct">0%</div></div></section>
+  <script>(function(){const t=(window.GAME_CONFIG&&GAME_CONFIG.title)||"Story Jigsaw Tales";document.title=t;document.querySelectorAll(".game-title").forEach(e=>e.textContent=t);})();</script>
 
   <section class="screen hide" id="menu"><div class="story-hub">
 <div id="storyLibrary"><small>STORY PUZZLE</small><h1>ห้องสมุดนิทาน</h1><p>เลือกเรื่อง แล้วต่อภาพทีละเหตุการณ์</p><div class="story-library-grid">
@@ -1040,16 +1074,7 @@
       "Giraffe","Hippo","Leopard","Rabbits",
       "Crabs","Fox","Koala","Flamingo"
     ];
-    const PIC_SRC = [
-"puzzle-art/bd8bed34af9c030ffd99c29c.jpg",
-"puzzle-art/240b7a272378042e61ea71e2.jpg",
-"puzzle-art/a341f41db8502172aa8ff9f8.jpg",
-"puzzle-art/a6b7680f5579835acfb283d0.jpg",
-"puzzle-art/e2de1786969facd45a21c5c7.jpg",
-"puzzle-art/70829b5799ade6218393740d.jpg",
-"puzzle-art/febc5c839bd68d93fdf3f4c4.jpg",
-"puzzle-art/8fd0f39922ccc1f409df1860.jpg"
-    ];
+    const PIC_SRC = ["lantern-art/chapter-1.webp","moon-turtle-art/chapter-1.webp","rice-pot-art/chapter-1.webp","kite-art/chapter-1.webp","seasons-art/chapter-1.webp","snow-fox-art/chapter-1.webp","lantern-art/chapter-16.webp","kite-art/chapter-13.webp"];
     const PIC_IMGS = PIC_SRC.map(src => { const im=new Image(); im.src=src; return im; });
 
     const PAL = [
@@ -1821,16 +1846,15 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
       if (it) it.style.display="none";
     }
 
-    let i=0;
-    const steps=[[20,"Loading files..."],[55,"Preparing stages..."],[100,"Ready!"]];
-    const tmr=setInterval(()=>{
-      const [v,tx]=steps[i];
-      document.getElementById("bar").style.width=v+"%";
-      document.getElementById("pct").textContent=v+"%";
-      document.getElementById("loadText").textContent=tx;
-      i++;
-      if(i>=steps.length){ clearInterval(tmr); Promise.all([...PIC_IMGS,...STORY_IMGS].map(im=>im.decode?im.decode().catch(()=>{}):Promise.resolve())).then(()=>setTimeout(()=>show(menu),200)); }
-    },400);
+    (function(){
+      const ims=[...PIC_IMGS,...STORY_IMGS],total=ims.length,t0=performance.now();let done=0,finished=false;
+      const bar=document.getElementById("bar"),pct=document.getElementById("pct"),txt=document.getElementById("loadText");
+      const set=v=>{bar.style.width=v+"%";pct.textContent=v+"%";bar.parentElement.setAttribute("aria-valuenow",v);const t=v>=100?"Ready!":v>=50?"Preparing stages...":"Loading files...";if(txt.dataset.k!==t){txt.dataset.k=t;txt.textContent=t;}};
+      const finish=()=>{if(finished)return;finished=true;set(100);setTimeout(()=>show(menu),Math.max(250,1400-(performance.now()-t0)));};
+      const one=()=>{done++;set(Math.min(99,Math.round(done/total*100)));if(done>=total)finish();};
+      set(3);ims.forEach(im=>{if(im.complete&&im.naturalWidth)one();else{im.addEventListener("load",one,{once:true});im.addEventListener("error",one,{once:true});}});
+      setTimeout(finish,15000);
+    })();
 
     document.querySelectorAll("[data-level]").forEach((b)=>{
       b.onclick=()=>{ storyMode=false;document.body.classList.remove("story-mode"); clickFx(b); customPlay=false; level=b.dataset.level; setTimeout(()=>{ renderGrid(); show(picker); },160); };
@@ -2036,7 +2060,7 @@ function migrateSkyDragonProgress(){
 }
 
 function storyStoragePrefix(){return "lsj-story-"+STORY_DATA.id;}
-function badgeLabels(){return STORY_DATA.id==="snowfox16"?({th:["เพื่อนของมังกร","นักเดินทางเหนือเมฆ","ผู้พิทักษ์เกาะลอยฟ้า"],en:["Dragon Friend","Cloud Traveler","Sky Island Guardian"],es:["Amigo del dragón","Viajero de las nubes","Guardián de la isla"]}[gameLang]):STORY_DATA.id==="seasons16"?["ผู้ฟังเสียงแห่งปะการัง","นักประสานเสียงใต้สมุทร","ผู้พิทักษ์บทเพลงมหาสมุทร"]:STORY_DATA.id==="kite16"?["นักเดินทางเหนือเมฆ","ผู้ค้นพบเกาะลับ","ผู้แบ่งปันเมล็ดแห่งความหวัง"]:STORY_DATA.id==="ricepot16"?["ผู้จุดประกายแห่งดวงดาว","โล่แห่งความหวัง","ไททันผู้พิทักษ์โลก"]:STORY_DATA.id==="moonturtle16"?["ผู้จุดแสงดวงแรก","สหายแห่งป่าเวทมนตร์","มังกรทองแห่งความเมตตา"]:["ช้างน้อยไม่ยอมแพ้","นักเดินทางใจมั่น","ช้างทองยอดนักต่อ"];}
+function badgeLabels(){const B={lantern16:['Persevering Little Elephant','Steadfast Explorer','Golden Puzzle Elephant'],moonturtle16:['Moon Helper','Reef Explorer','Guardian of the Moon'],ricepot16:['Kind Sharer','Village Helper','Golden Rice Pot'],kite16:['Kite Flyer','Wind Mender','Kite Kingdom Hero'],seasons16:['Seed Collector','Season Walker','Keeper of the Ancient Tree'],snowfox16:['Curious Fox','Ice Explorer','Northern Lights Friend']}[STORY_DATA.id]||[];return B.map(TR);}
 function storyCount(){return STORY_DATA.chapters.length;}
 function storyDoneFor(difficulty){migrateSkyDragonProgress();return new Set(readProgress(storyStoragePrefix()+'-done-'+difficulty).split(',').map(Number).filter(n=>Number.isInteger(n)&&n>=1&&n<=storyCount()));}
 function collectedStory(){const set=new Set();for(const difficulty of ['easy','medium','hard'])for(const n of storyDoneFor(difficulty))set.add(n);return set;}
@@ -2064,7 +2088,7 @@ function narrateStory(text,explicit=false,onDone=null){
  if(!window.speechSynthesis){if(explicit)alert('อุปกรณ์นี้ยังไม่มีเสียงอ่านนิทาน');fail();return;}
  const say=()=>{if(tok!==speechToken)return;const voices=window.speechSynthesis.getVoices();const norm=v=>v.lang.toLowerCase().replace('_','-');let voice=voices.find(v=>norm(v).startsWith(gameLang));const fallback=!voice&&voices.length?voices.find(v=>norm(v).startsWith('en')):null;
   if(!voice&&voices.length&&explicit)alert('ยังไม่พบเสียงภาษาไทยบนอุปกรณ์นี้ อ่านเนื้อเรื่องบนหน้าจอได้ตามปกติ');
-  const utterance=new SpeechSynthesisUtterance(text);utterance.lang=({th:'th-TH',en:'en-US',es:'es-ES'}[gameLang]);if(voice)utterance.voice=voice;else if(fallback){utterance.voice=fallback;utterance.lang=fallback.lang;}utterance.rate=.9;
+  const utterance=new SpeechSynthesisUtterance(text);utterance.lang=(window.I18N_SPEECH||{})[gameLang]||'en-US';if(voice)utterance.voice=voice;else if(fallback){utterance.voice=fallback;utterance.lang=fallback.lang;}utterance.rate=.9;
   utterance.onend=()=>finishSpeech(tok,true);utterance.onerror=()=>finishSpeech(tok,true);
   window._storyUtterance=utterance;window.speechSynthesis.resume();window.speechSynthesis.speak(utterance);};
  if(window.speechSynthesis.getVoices().length)say();else{let done=false;const go=()=>{if(done)return;done=true;window.speechSynthesis.removeEventListener('voiceschanged',go);say();};window.speechSynthesis.addEventListener('voiceschanged',go);setTimeout(go,700);}
@@ -2075,7 +2099,7 @@ let albumPageIndex=0;
 function openStoryAlbum(){
  migrateTortoiseProgress();stopNarration();const collected=collectedStory();album.innerHTML='<div class="album-top"><h2>📖 สมุดนิทานของฉัน</h2><button id="closeAlbum">ปิด ✕</button></div><p>'+STORY_DATA.title+' · สะสมแล้ว '+collected.size+'/'+storyCount()+' ภาพ</p><div id="albumBadges"></div><div class="album-grid" id="albumGrid"></div>';
  if(collected.has(1)){const read=document.createElement('button');read.className='story-collection';read.textContent=storyLabel('📖 อ่านนิทานต่อเนื่อง','📖 Read collected story','📖 Leer el cuento');read.onclick=readCollectedStory;album.querySelector('#albumBadges').before(read)}const badges=album.querySelector('#albumBadges');for(const [d,label] of [['easy',badgeLabels()[0]],['medium',badgeLabels()[1]],['hard',badgeLabels()[2]]]){const badge=document.createElement('button');badge.textContent=(earnedBadge(d)?'🏅 ':'🔒 ')+label;badge.disabled=!earnedBadge(d);badge.onclick=()=>{writeProgress('lsj-story-avatar-'+STORY_DATA.id,d);refreshStoryProgress();alert('ใช้ตรา '+label+' เป็นรูปผู้เล่นแล้ว');};badges.append(badge);}
- const grid=album.querySelector('#albumGrid');for(let n=albumPageIndex*4+1;n<=Math.min(storyCount(),albumPageIndex*4+4);n++){const card=document.createElement('button');card.className='album-page';card.disabled=!collected.has(n);if(collected.has(n)){const im=document.createElement('img');im.src=STORY_DATA.images[n-1];im.alt=STORY_DATA.chapters[n-1][0];card.append(im);}else{const lock=document.createElement('span');lock.className='album-lock';lock.textContent='🔒';card.append(lock);}const title=document.createElement('span');title.textContent=n+'. '+(collected.has(n)?STORY_DATA.chapters[n-1][0]:'ผ่านด่านเพื่อเก็บภาพ');card.append(title);card.onclick=()=>openAlbumPage(n);grid.append(card);}
+ const grid=album.querySelector('#albumGrid');for(let n=albumPageIndex*4+1;n<=Math.min(storyCount(),albumPageIndex*4+4);n++){const card=document.createElement('button');card.className='album-page';card.disabled=!collected.has(n);if(collected.has(n)){const im=document.createElement('img');im.src=STORY_DATA.images[n-1];im.alt=STORY_DATA.chapters[n-1][0];card.append(im);}else{const lock=document.createElement('span');lock.className='album-lock';lock.textContent='🔒';card.append(lock);}const title=document.createElement('span');title.textContent=n+'. '+(collected.has(n)?STORY_DATA.chapters[n-1][0]:storyLabel('ผ่านด่านเพื่อเก็บภาพ','Clear the stage to collect this picture','Supera el nivel para conseguir la imagen'));card.append(title);card.onclick=()=>openAlbumPage(n);grid.append(card);}
  const nav=document.createElement('nav');nav.className='album-actions';const prev=document.createElement('button'),next=document.createElement('button'),label=document.createElement('span');prev.textContent=storyLabel('‹ ก่อนหน้า','‹ Previous','‹ Anterior');next.textContent=storyLabel('ถัดไป ›','Next ›','Siguiente ›');label.textContent=(albumPageIndex+1)+' / '+Math.ceil(storyCount()/4);prev.disabled=albumPageIndex===0;next.disabled=albumPageIndex>=Math.ceil(storyCount()/4)-1;prev.onclick=()=>{albumPageIndex--;openStoryAlbum()};next.onclick=()=>{albumPageIndex++;openStoryAlbum()};nav.append(prev,label,next);album.append(nav);
  album.querySelector('#closeAlbum').onclick=()=>{stopNarration();album.close()};if(!album.open)album.showModal();
 }
@@ -2120,16 +2144,22 @@ const UI_TEXTS=[["ความเป็นส่วนตัว", "Privacy", "Pr
 ['🧪 โหมดทดสอบ · เปิดครบ16ด่าน โดยไม่ถือว่าผ่านแล้ว','🧪 Test mode · All 16 stages open, not marked cleared','🧪 Modo de prueba · 16 niveles abiertos sin marcarlos superados'],['🧪 เล่นด่านสุดท้าย (16) ทันที','🧪 Play the final stage (16)','🧪 Jugar el último nivel (16)'],['📖 ดูภาพเล่าเรื่องครบ16ฉาก','📖 View all 16 story scenes','📖 Ver las 16 escenas del cuento'],['ตัวอย่างแบนเนอร์','Banner preview','Vista previa del banner'],['ตัวอย่างตำแหน่ง · ไม่ใช่โฆษณา Google','Layout example · not a Google ad','Ejemplo de ubicación · no es un anuncio de Google'],['ตัวอย่างโฆษณาเต็มจอ','INTERSTITIAL PREVIEW','VISTA PREVIA DEL ANUNCIO'],['พื้นที่โฆษณาเต็มจอ','Full-screen ad area','Espacio de anuncio a pantalla completa'],['ปิด','Close','Cerrar'],['🎁 โฆษณารับรางวัล','🎁 Rewarded ad','🎁 Anuncio con recompensa'],['กำลังดูโฆษณาเพื่อรับรางวัล...','Watching ad for your reward...','Viendo el anuncio para obtener la recompensa...'],['ชื่อผู้เล่น','Your player name','Tu nombre de jugador'],['บันทึกและเล่น','Save & play','Guardar y jugar'],['เล่นโดยไม่จัดอันดับ','Play without ranking','Jugar sin clasificación'],['รูปภาพของฉัน','My photo puzzle','Mi foto como puzle'],['เลือกระดับแล้วเล่น','Pick a mode and play','Elige un modo y juega'],['ผลการเล่น','Stage result','Resultado del nivel'],['ปลดล็อกภาพถัดไปแล้ว','Next picture unlocked','Siguiente imagen desbloqueada'],['ผ่านครบแล้ว','All done','Todo completado'],['ต่อภาพสำเร็จ','Photo puzzle complete','Imagen completada'],['ด่านที่ผ่านแล้ว','Cleared stages','Niveles superados'],['เปิดเสียง','Enable sound','Activar sonido'],['ปิดเสียง','Mute sound','Silenciar'],['ดูโฆษณารับตัวช่วยวางภาพ','Watch ad for a puzzle helper','Ver anuncio para una ayuda'],['รูปปริศนากำลังกระจายลงกระดาน','Puzzle pieces are moving onto the board','Las piezas se colocan en el tablero']
 ];
 const UI_LOOKUP=new Map();for(const row of UI_TEXTS)for(const value of row)if(!UI_LOOKUP.has(value))UI_LOOKUP.set(value,row);
-let gameLang=(()=>{try{const saved=localStorage.getItem('lsj-story-lang');if(['th','en','es'].includes(saved))return saved;}catch(e){}return 'en';})();
+const LANGS=window.I18N_LANGS||['th','en','es'];
+function detectLang(){const list=[...(navigator.languages||[]),navigator.language||''];for(const raw of list){const l=String(raw).toLowerCase();if(!l)continue;let b=l.split(/[-_]/)[0];if(b==='tl')b='fil';if(b==='zh')return 'zh';if(b==='nb'||b==='no')continue;if(LANGS.includes(b))return b;}return 'en';}
+let gameLang=(()=>{try{const saved=localStorage.getItem('lsj-story-lang');if(LANGS.includes(saved))return saved;}catch(e){}return detectLang();})();
+window.__missingTR=new Set();
+function TRF(tpl,...a){const L=window.I18N_UI&&window.I18N_UI[gameLang];const t=(gameLang!=='en'&&L&&L[tpl])||tpl;if(gameLang!=='en'&&!(L&&L[tpl]))window.__missingTR.add(tpl);return t.replace(/\{(\d+)\}/g,(x,i)=>a[i]??'');}
+function TR(en,q){if(en==null||gameLang==='en')return en;const text=String(en),trim=text.trim();if(!trim)return text;const L=(window.I18N_UI&&window.I18N_UI[gameLang])||{};let out=L[trim];if(out==null){const nums=[];const tpl=trim.replace(/\d+(?:[.:]\d+)*/g,x=>{nums.push(x);return '{'+(nums.length-1)+'}'});if(nums.length&&L[tpl]!=null)out=L[tpl].replace(/\{(\d+)\}/g,(x,i)=>nums[i]);}if(out==null){if(!q&&!/^[\d\s.:\/×·%★☆⏱🧩⭐+\-–]+$/.test(trim))window.__missingTR.add(trim);return text;}return text.slice(0,text.length-text.trimStart().length)+out+text.slice(text.trimEnd().length);}
+function applyDir(){document.documentElement.dir=gameLang==='ar'?'rtl':'ltr';}
 function uiIndex(){return {th:0,en:1,es:2}[gameLang];}
 function translateText(value){
- const text=String(value),trim=text.trim();if(!trim)return text;let out=UI_LOOKUP.has(trim)?UI_LOOKUP.get(trim)[uiIndex()]:trim;
+ const text=String(value),trim=text.trim();if(!trim)return text;let out=UI_LOOKUP.has(trim)?(uiIndex()!==undefined?UI_LOOKUP.get(trim)[uiIndex()]:TR(UI_LOOKUP.get(trim)[1])):trim;if(out===trim&&uiIndex()===undefined){const tr=TR(trim,1);if(tr!==trim)out=tr;}
  if(out===trim){
   for(const story of Object.values(STORY_CATALOG))for(const title of Object.values(story.titles))if(trim===title)out=story.titles[gameLang];
   const patterns=[
    [/^สะสมแล้ว (\d+)\/(\d+) ภาพ$/,m=>({th:`สะสมแล้ว ${m[1]}/${m[2]} ภาพ`,en:`Collected ${m[1]}/${m[2]} pictures`,es:`Imágenes: ${m[1]}/${m[2]}`})],
    [/^นิทาน (\d+) ด่าน$/,m=>({th:`นิทาน ${m[1]} ด่าน`,en:`${m[1]} story stages`,es:`${m[1]} niveles del cuento`})],
-   [/^ใช้ตรา (.+) เป็นรูปผู้เล่นแล้ว$/,m=>({th:`ใช้ตรา ${m[1]} เป็นรูปผู้เล่นแล้ว`,en:`Badge selected: ${translateText(m[1])}`,es:`Insignia elegida: ${translateText(m[1])}`})],
+   [/^ใช้ตรา (.+) เป็นรูปผู้เล่นแล้ว$/,m=>({x:(uiIndex()===undefined?TRF('Badge selected: {0}',translateText(m[1])):''),th:`ใช้ตรา ${m[1]} เป็นรูปผู้เล่นแล้ว`,en:`Badge selected: ${translateText(m[1])}`,es:`Insignia elegida: ${translateText(m[1])}`})],
 
    [/^(?:ผ่านแล้ว|Completed|Superados) (\d+)\/(\d+) (?:ด่าน|stages|niveles)$/,m=>({th:`ผ่านแล้ว ${m[1]}/${m[2]} ด่าน`,en:`Completed ${m[1]}/${m[2]} stages`,es:`Superados ${m[1]}/${m[2]} niveles`})],
    [/^(?:หน้า|Page|Página) (\d+) \/ (\d+)$/,m=>({th:`หน้า ${m[1]} / ${m[2]}`,en:`Page ${m[1]} / ${m[2]}`,es:`Página ${m[1]} / ${m[2]}`})],
@@ -2139,11 +2169,12 @@ function translateText(value){
    [/^(\d+) × (\d+) · (\d+) (?:ชิ้น|pieces|piezas)$/,m=>({th:`${m[1]} × ${m[2]} · ${m[3]} ชิ้น`,en:`${m[1]} × ${m[2]} · ${m[3]} pieces`,es:`${m[1]} × ${m[2]} · ${m[3]} piezas`})],
    [/^(?:ไปด่าน|Go to stage|Ir al nivel) (\d+)$/,m=>({th:`ไปด่าน ${m[1]}`,en:`Go to stage ${m[1]}`,es:`Ir al nivel ${m[1]}`})],
    [/^(?:ภาพสตอรี่|Story scene|Escena del cuento) (\d+) \/ (\d+)$/,m=>({th:`ภาพสตอรี่ ${m[1]} / ${m[2]}`,en:`Story scene ${m[1]} / ${m[2]}`,es:`Escena del cuento ${m[1]} / ${m[2]}`})],
-   [/^🔊 (?:เสียงเล่าเรื่อง:|Narration:|Narración:) (.+)$/,m=>({th:`🔊 เสียงเล่าเรื่อง: ${translateText(m[1])}`,en:`🔊 Narration: ${translateText(m[1])}`,es:`🔊 Narración: ${translateText(m[1])}`})],
+   [/^🔊 (?:เสียงเล่าเรื่อง:|Narration:|Narración:) (.+)$/,m=>({x:(uiIndex()===undefined?TRF('🔊 Narration: {0}',translateText(m[1])):''),th:`🔊 เสียงเล่าเรื่อง: ${translateText(m[1])}`,en:`🔊 Narration: ${translateText(m[1])}`,es:`🔊 Narración: ${translateText(m[1])}`})],
    [/^(\d+) \/ (\d+) stars$/,m=>({th:`${m[1]} / ${m[2]} ดาว`,en:`${m[1]} / ${m[2]} stars`,es:`${m[1]} / ${m[2]} estrellas`})]
-  ];for(const [regex,format] of patterns){const m=trim.match(regex);if(m){out=format(m)[gameLang];break;}}
-  if(out===trim&&trim.includes(' · '))out=trim.split(' · ').map(translateText).join(' · ');
-  if(out===trim){out=out.replace(/^Score (\d+) · Time (.+)$/,(all,a,b)=>gameLang==='th'?`คะแนน ${a} · เวลา ${b}`:gameLang==='es'?`Puntos ${a} · Tiempo ${b}`:all);}
+  ];for(const [regex,format] of patterns){const m=trim.match(regex);if(m){const f=format(m);out=f[gameLang]??f.x??TR(f.en);break;}}
+  if(out===trim){const nm=trim.match(/^(\d+)\. (.+)$/);if(nm){const inner=translateText(nm[2]);if(inner!==nm[2])out=nm[1]+'. '+inner;}}
+   if(out===trim&&trim.includes(' · '))out=trim.split(' · ').map(translateText).join(' · ');
+  if(out===trim){out=out.replace(/^Score (\d+) · Time (.+)$/,(all,a,b)=>gameLang==='th'?`คะแนน ${a} · เวลา ${b}`:gameLang==='es'?`Puntos ${a} · Tiempo ${b}`:gameLang==='en'?all:TRF('Score {0} · Time {1}',a,b));}
  }
  return text.slice(0,text.length-text.trimStart().length)+out+text.slice(text.trimEnd().length);
 }
@@ -2158,12 +2189,12 @@ function translateTree(root=document.body){
 }
 let translationQueued=false;
 const languageObserver=new MutationObserver(()=>{if(translationQueued)return;translationQueued=true;queueMicrotask(()=>{translationQueued=false;translateTree()})});
-function applyStoryLanguage(){const story=STORY_CATALOG[STORY_DATA.id];STORY_DATA.title=story.titles[gameLang];STORY_DATA.chapters=story.locales[gameLang];document.documentElement.lang=gameLang;try{if(window.AndroidAds&&AndroidAds.setStoryLanguage)AndroidAds.setStoryLanguage(gameLang);}catch(e){}}
+function applyStoryLanguage(){const story=STORY_CATALOG[STORY_DATA.id];STORY_DATA.title=story.titles[gameLang];STORY_DATA.chapters=story.locales[gameLang];document.documentElement.lang=gameLang;applyDir();try{if(window.AndroidAds&&AndroidAds.setStoryLanguage)AndroidAds.setStoryLanguage(gameLang);}catch(e){}}
 function selectStory(id){stopNarration();const story=STORY_CATALOG[id];if(!story)return;Object.assign(STORY_DATA,{id:story.id,title:story.titles[gameLang],chapters:story.locales[gameLang],images:story.images});STORY_IMGS.splice(0,STORY_IMGS.length,...story.images.map(src=>{const im=new Image();im.src=src;return im;}));storyPage=1;refreshStoryDetail();}
-function refreshStoryDetail(){const story=STORY_CATALOG[STORY_DATA.id],detail=document.getElementById('storyDetail');detail.querySelector('h1').textContent=STORY_DATA.title;detail.querySelector('small').textContent=gameLang==='th'?`เรื่องที่ ${story.number} · ${storyCount()} ด่าน`:gameLang==='es'?`Cuento ${story.number} · ${storyCount()} niveles`:`Story ${story.number} · ${storyCount()} stages`;detail.querySelector('.story-cover').src=story.cover||story.images[0];detail.querySelector('.story-cover').alt=STORY_DATA.title;detail.querySelector('p').textContent=story.descriptions[gameLang]+' '+translateText('เลือกระดับเพื่อเข้าสู่ด่านย่อย');refreshStoryProgress();}
-function updateLanguage(lang){if(!['th','en','es'].includes(lang))return;stopNarration();gameLang=lang;try{localStorage.setItem('lsj-story-lang',lang)}catch(e){}applyStoryLanguage();refreshStoryDetail();renderStoryBooks();renderLibraryPage();refreshContinueStory();if(!picker.classList.contains('hide'))renderGrid();setNarrationLabel();translateTree();document.querySelectorAll('[data-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===lang)));document.title='Story Jigsaw';}
+function refreshStoryDetail(){const story=STORY_CATALOG[STORY_DATA.id],detail=document.getElementById('storyDetail');detail.querySelector('h1').textContent=STORY_DATA.title;detail.querySelector('small').textContent=gameLang==='th'?`เรื่องที่ ${story.number} · ${storyCount()} ด่าน`:gameLang==='es'?`Cuento ${story.number} · ${storyCount()} niveles`:TRF('Story {0} · {1} stages',story.number,storyCount());detail.querySelector('.story-cover').src=story.cover||story.images[0];detail.querySelector('.story-cover').alt=STORY_DATA.title;detail.querySelector('p').textContent=story.descriptions[gameLang]+' '+translateText('เลือกระดับเพื่อเข้าสู่ด่านย่อย');refreshStoryProgress();}
+function updateLanguage(lang){if(!LANGS.includes(lang))return;stopNarration();gameLang=lang;try{localStorage.setItem('lsj-story-lang',lang)}catch(e){}applyStoryLanguage();refreshStoryDetail();renderStoryBooks();renderLibraryPage();refreshContinueStory();if(!picker.classList.contains('hide'))renderGrid();setNarrationLabel();translateTree();document.querySelectorAll('[data-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===lang)));document.title=(window.GAME_CONFIG&&GAME_CONFIG.title)||'Story Jigsaw Tales';applyDir();}
 function renderStoryBooks(){for(const story of Object.values(STORY_CATALOG)){const card=document.getElementById(({lantern16:'storyStart',moonturtle16:'storyDragon',ricepot16:'storyTitan',kite16:'storyAirship',seasons16:'storyMermaid',snowfox16:'storySkyDragon'})[story.id]);if(card){card.querySelector('strong').textContent=story.titles[gameLang];card.querySelector('img').alt=story.titles[gameLang];}}}
-const languageBar=document.createElement('div');languageBar.id='languageBar';languageBar.setAttribute('aria-label','Language');languageBar.innerHTML='<span>🌐</span><button data-language="th">ไทย</button><button data-language="en">English</button><button data-language="es">Español</button>';document.querySelector('.story-hub').prepend(languageBar);languageBar.querySelectorAll('button').forEach(b=>b.onclick=()=>updateLanguage(b.dataset.language));
+const languageBar=document.createElement('div');languageBar.id='languageBar';languageBar.setAttribute('aria-label','Language');languageBar.innerHTML='<span>🌐</span>'+LANGS.map(l=>`<button data-language="${l}" lang="${l}"${l==='ar'?' dir="rtl"':''} data-ui-localized>${(window.I18N_NAMES||{})[l]||l}</button>`).join('');document.querySelector('.story-hub').prepend(languageBar);languageBar.querySelectorAll('button').forEach(b=>b.onclick=()=>updateLanguage(b.dataset.language));
 const originalAlert=window.alert.bind(window);window.alert=message=>originalAlert(translateText(String(message)));
 applyStoryLanguage();refreshStoryDetail();renderStoryBooks();document.querySelectorAll('[data-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===gameLang)));translateTree();languageObserver.observe(document.body,{subtree:true,childList:true,characterData:true});
 
@@ -2178,8 +2209,8 @@ function renderLibraryPage(page=libraryPage){
  document.getElementById('libraryPrev').disabled=libraryPage===0;
  document.getElementById('libraryNext').disabled=libraryPage===pages-1;
  document.getElementById('libraryPageLabel').textContent=translateText(`หน้า ${libraryPage+1} / ${pages}`);
- document.getElementById('libraryPrev').textContent=({th:'‹ ก่อนหน้า',en:'‹ Previous',es:'‹ Anterior'})[gameLang];
- document.getElementById('libraryNext').textContent=({th:'ถัดไป ›',en:'Next ›',es:'Siguiente ›'})[gameLang];
+ document.getElementById('libraryPrev').textContent=(({th:'‹ ก่อนหน้า',en:'‹ Previous',es:'‹ Anterior'})[gameLang]??TR('‹ Previous'));
+ document.getElementById('libraryNext').textContent=(({th:'ถัดไป ›',en:'Next ›',es:'Siguiente ›'})[gameLang]??TR('Next ›'));
 }
 function changeLibraryPage(delta){renderLibraryPage(libraryPage+delta);document.getElementById('menu').scrollTo({top:0,behavior:'smooth'})}
  document.getElementById('libraryPrev').onclick=()=>changeLibraryPage(-1);
@@ -2188,7 +2219,7 @@ function changeLibraryPage(delta){renderLibraryPage(libraryPage+delta);document.
  renderLibraryPage();
 
 
-function storyLabel(th,en,es){return ({th,en,es})[gameLang]}
+function storyLabel(th,en,es){return ({th,en,es})[gameLang]??TR(en)}
 function resumeStoryData(){
  migrateSkyDragonProgress();
  try{const saved=JSON.parse(readProgress('lsj-story-resume')||'null');if(!saved||!STORY_CATALOG[saved.id]||!['easy','medium','hard'].includes(saved.level))return null;
@@ -2283,7 +2314,7 @@ function fitVisibleViewport(){const h=Math.round(window.visualViewport?.height||
 window.addEventListener('resize',fitVisibleViewport);window.visualViewport?.addEventListener('resize',fitVisibleViewport);fitVisibleViewport();
 const menuFitBack=window.androidBack;window.androidBack=function(){const d=[...document.querySelectorAll('dialog[open]')].at(-1);if(d){d.close();return true;}return menuFitBack?menuFitBack():false;};
 
-function refreshCompactToolbar(){settingsMenu.textContent=storyLabel('⚙ เสียง','⚙ Audio','⚙ Audio');settingsMenu.setAttribute('aria-label',storyLabel('ตั้งค่าเสียงและเอฟเฟกต์','Sound and effects settings','Ajustes de sonido y efectos'));const privacy=document.getElementById('privacyButton');privacy.textContent=storyLabel('🛡 ข้อมูล','🛡 Privacy','🛡 Privacidad');languageOpen.textContent=storyLabel('🌐 ภาษา','🌐 Language','🌐 Idioma');}
+function refreshCompactToolbar(){settingsMenu.textContent=storyLabel('⚙ เสียง','⚙ Audio','⚙ Audio');settingsMenu.setAttribute('aria-label',storyLabel('ตั้งค่าเสียงและเอฟเฟกต์','Sound and effects settings','Ajustes de sonido y efectos'));const privacy=document.getElementById('privacyButton');privacy.textContent=storyLabel('🛡 ข้อมูล','🛡 Privacy','🛡 Privacidad');languageOpen.textContent='🌐 '+((window.I18N_NAMES||{})[gameLang]||gameLang);languageOpen.setAttribute('aria-label',storyLabel('ภาษา','Language','Idioma'));languageOpen.setAttribute('data-ui-localized','');}
 const libraryDepthLanguage=updateLanguage;updateLanguage=function(lang){libraryDepthLanguage(lang);refreshCompactToolbar();};refreshCompactToolbar();
 // Keep the board view to one header and one aligned action row.
 document.querySelector('#play .play-nav').append(settingsPlay);settingsPlay.classList.add('play-settings');
@@ -2296,9 +2327,10 @@ const CORE_LOCALE={
  en:{levels:{easy:'Easy',medium:'Medium',hard:'Hard'},pieces:'pieces',story:'Story',stages:'stages',completed:'Completed',library:'Story Library',open:'Open story →',modes:'Easy / Medium / Hard',time:'Time',score:'Score',pieceLabel:'Pieces'},
  es:{levels:{easy:'Fácil',medium:'Medio',hard:'Difícil'},pieces:'piezas',story:'Cuento',stages:'niveles',completed:'Superados',library:'Biblioteca de cuentos',open:'Abrir cuento →',modes:'Fácil / Medio / Difícil',time:'Tiempo',score:'Puntos',pieceLabel:'Piezas'}
 };
+function coreLocaleFor(){const e=CORE_LOCALE.en,o={levels:{}};for(const k in e.levels)o.levels[k]=TR(e.levels[k]);for(const k in e)if(k!=='levels')o[k]=TR(e[k]);return o;}
 function localeText(node,value){if(!node)return;node.setAttribute('data-ui-localized','');if(node.textContent!==value)node.textContent=value;}
 function refreshCoreLocale(){
- const t=CORE_LOCALE[gameLang];
+ const t=CORE_LOCALE[gameLang]||coreLocaleFor();
  document.querySelectorAll('[data-story-level]').forEach(b=>{const d=b.dataset.storyLevel,size=LEVELS[d].size;localeText(b.querySelector('strong'),t.levels[d]);localeText(b.querySelector('span'),`${size} × ${size} · ${size*size} ${t.pieces}`);localeText(b.querySelector('small'),`${t.completed} ${storyDoneFor(d).size}/${storyCount()} ${t.stages}`);});
  localeText(document.querySelector('#storyLibrary>h1'),t.library);
  for(const story of Object.values(STORY_CATALOG)){const card=document.getElementById(({lantern16:'storyStart',moonturtle16:'storyDragon',ricepot16:'storyTitan',kite16:'storyAirship',seasons16:'storyMermaid',snowfox16:'storySkyDragon'})[story.id]);if(!card)continue;localeText(card.querySelector('.book-number'),`${t.story} ${story.number}`);localeText(card.querySelector('strong'),story.titles[gameLang]);localeText(card.querySelector('small'),`${story.images.length} ${t.stages} · ${t.modes}`);localeText(card.querySelector('b'),t.open);}

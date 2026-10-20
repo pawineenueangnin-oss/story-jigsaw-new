@@ -1,0 +1,109 @@
+=== moonturtle16 — The Turtle Who Carried the Moon ===
+Art folder: /workspace/new-story-jigsaw/moon-turtle-art/  (files chapter-1.webp .. chapter-16.webp)
+Description: Help old Grandma Turtle return the fallen moon to the sky
+Stage 1 (EN): The Night the Moon Fell | See something strange | One night the moon slips from the sky and splashes into the sea. | The ocean goes dark, and all the fish are frightened.
+All 16 stages (EN): title | goal | line 1 | line 2
+ 1. The Night the Moon Fell | See something strange | One night the moon slips from the sky and splashes into the sea. | The ocean goes dark, and all the fish are frightened.
+ 2. Grandma Sea Turtle | Meet an unlikely hero | An old sea turtle swims over to the moon, glowing softly underwater. | "I am old, but my shell is strong enough," she says.
+ 3. Carrying the Moon | Begin the undersea journey | An octopus helps lift the moon onto Grandma Turtle’s shell. | Now the moon lights the way through the sea.
+ 4. The Clownfish Guide | Listen for directions | A tiny clownfish says they must swim to the great whirlpool in the north. | "The whirlpool can lift you to the tallest wave."
+ 5. The Rainbow Reef | Swim through the coral | The coral glows pink, purple and orange in the moonlight. | Colourful fish follow in a long parade.
+ 6. The Kelp Forest | Find the path | Tall kelp sways like trees in an underwater forest. | A pair of seahorses shows Grandma Turtle a shortcut.
+ 7. A Baby Turtle Joins | Welcome a companion | A newly hatched baby turtle asks to come along. | Grandma Turtle teaches it to swim calmly with the current.
+ 8. The Old Shipwreck | Explore carefully | They swim past an old shipwreck covered in shells. | Pearl oysters shimmer in the moonlight.
+ 9. The Deep Water | Shine in the dark | The deeper they go, the darker it gets, but glowing creatures come to help. | Jellyfish drift around them like tiny lanterns.
+10. The Gentle Whale | Ask for help | A huge blue whale sings a deep hello. | It lets them ride on its back through the strongest current.
+11. The Great Storm | Hold on through the storm | A wild storm tosses the waves about. | Grandma Turtle tucks in her head and holds the moon tight.
+12. The Giant Whirlpool | Enter the whirlpool | After the storm, the giant whirlpool appears ahead. | "Hold on tight," Grandma Turtle tells the baby turtle.
+13. Up the Great Wave | Spin to the surface | The whirlpool spins them up, higher and higher. | At last they reach the tallest wave in the ocean.
+14. Returning the Moon | Push the moon up high | Grandma Turtle stretches with all her strength and pushes the moon upward. | Hundreds of seabirds carry it the rest of the way.
+15. The Sea Shines Again | Celebrate the moonlight | Moonlight shines down again, and the sea sparkles silver. | Every sea creature rises to cheer.
+16. The Home Beach | Return home proudly | Grandma Turtle brings the baby turtle back to the beach where it was born. | Young or old, anyone can do something great. The End.
+
+=== ricepot16 — Grandma's Magic Rice Pot ===
+Art folder: /workspace/new-story-jigsaw/rice-pot-art/  (files chapter-1.webp .. chapter-16.webp)
+Description: When the pot will not stop cooking, a child must find the magic word
+Stage 1 (EN): The Little Wooden House | Meet Noi and Grandma | Noi lives with her grandma in a little wooden house at the foot of a hill. | Some days there is hardly enough rice in the jar.
+All 16 stages (EN): title | goal | line 1 | line 2
+ 1. The Little Wooden House | Meet Noi and Grandma | Noi lives with her grandma in a little wooden house at the foot of a hill. | Some days there is hardly enough rice in the jar.
+ 2. A Gift in the Forest | Receive the magic pot | Noi shares her sticky rice with a hungry old woman in the forest. | In return, the woman gives her a small clay pot.
+ 3. Two Magic Words | Remember the words | "Say 'Cook, little pot' and it will fill with rice." | "When you have enough, say 'Enough, little pot.'"
+ 4. The First Feast | Try the magic pot | Noi says the words, and the pot fills with steaming fragrant rice. | She and Grandma eat until they are full for the first time in days.
+ 5. Grandma Tries It | Leave Grandma in charge | One day Noi goes to market. Grandma is hungry and says, "Cook, little pot." | But Grandma cannot remember the words to stop it.
+ 6. Rice Fills the Kitchen | Handle the chaos | Rice spills over the pot, the table and the whole kitchen. | The cat and the chickens run away in a muddle.
+ 7. Rice Out the Window | Follow the rice river | Rice pours out of the window and down the stairs like a waterfall. | The village children laugh and slide down the rice hills.
+ 8. Mountains of Rice | Help the villagers | Rice covers the road and market stalls until no cart can pass. | Villagers scoop it into baskets, but it keeps coming.
+ 9. Noi Hurries Home | Get back in time | At the market, Noi sees rice flowing down the street. | She climbs over the rice hills to rush home.
+10. The Forgotten Word | Remember the magic word | The rice is now higher than the door. Noi tries to remember. | "Enough... enough what?" She thinks back to the old woman in the forest.
+11. Enough, Little Pot | Stop the magic pot | "Enough, little pot!" Noi shouts as loud as she can. | The pot gives a little shake, and finally it stops.
+12. A Village of Rice | See what happened | The whole village is white with rice, like snow. | Grandma apologises to everyone with a red face.
+13. A Good Idea | Turn trouble into a chance | Noi has an idea: "Let's share the rice with every home!" | Everyone fills baskets and pots together.
+14. A Village Feast | Join the party | That night the village holds a feast with mango sticky rice and tasty curries. | Nobody goes hungry at all.
+15. The Old Woman Returns | Meet the giver again | The old woman from the forest joins the feast and smiles. | "The pot is not magic because of the rice, but because of a sharing heart."
+16. Knowing Enough | Learn about balance | From then on, Noi cooks just enough each day and shares with those in need. | Knowing what is enough, and sharing, is true happiness. The End.
+
+=== kite16 — The Paper Kite Kingdom ===
+Art folder: /workspace/new-story-jigsaw/kite-art/  (files chapter-1.webp .. chapter-16.webp)
+Description: Fly to a kingdom on the wind and mend the broken summer breeze
+Stage 1 (EN): The Summer Field | Meet Ton and his kite | Ton made a red-and-gold star kite all by himself and takes it to the big field. | But today there is no wind, and every kite falls down.
+All 16 stages (EN): title | goal | line 1 | line 2
+ 1. The Summer Field | Meet Ton and his kite | Ton made a red-and-gold star kite all by himself and takes it to the big field. | But today there is no wind, and every kite falls down.
+ 2. The Talking Kite | Listen to the kite | Suddenly the kite whispers, "The summer wind is broken. Please help us." | "Hold the string tight, and we will take you there."
+ 3. Up into the Sky | Fly above the clouds | The kite lifts Ton high above the rooftops and treetops. | The field below shrinks to the size of a handkerchief.
+ 4. The Cloud Gate | Enter the kingdom | Above the clouds stands a great gate made of coloured paper. | The guard kites bow to welcome a guest from the ground.
+ 5. The Pakpao City | Visit the first city | The first city is full of small, quick pakpao kites. | They dance on the last gentle breezes left.
+ 6. The Dragon Kite City | Ask for help | Next comes a city of long, colourful dragon kites. | The eldest dragon says the wind broke at the top of Cloud Mountain.
+ 7. The Fish Kite City | Gather mending tools | Fish-shaped kites from around the world give Ton a rainbow thread. | "Use this thread to tie the wind back together."
+ 8. The Bird Kite City | Find a travel partner | A big eagle kite offers to fly Ton to Cloud Mountain. | Ton’s star kite flies proudly beside them.
+ 9. The Sea of Clouds | Cross the cloud sea | They fly over a sea of clouds as soft as cotton. | A rainbow arches ahead like a bridge.
+10. The Mischievous Whirlwind | Get past the whirlwind | A mischievous whirlwind rushes in and tries to tangle the strings. | Ton spins with it and slips free.
+11. Cloud Mountain Peak | Reach the goal | At the top of Cloud Mountain, a clear blue ribbon of wind lies broken in two. | Both ends flutter weakly.
+12. Tying the Wind | Mend the wind | Ton carefully ties the two pieces of wind together with the rainbow thread. | The last knot is tight and strong.
+13. The Summer Wind Returns | Wake the wind | The wind takes a huge breath and blows across the whole sky. | Every kite in the kingdom rises at once.
+14. The Kite Parade | Join the parade | The kingdom holds its longest kite parade to thank Ton. | Kites from every city line up like a rainbow.
+15. Gliding Home | Return to the ground | A warm breeze carries Ton gently back down. | His friends in the field cheer as all their kites fly again.
+16. Kites for Everyone | Share the sky | Ton teaches his friends to make their own kites, and the sky fills with colour. | What we make with our hands and hearts can take us far. The End.
+
+=== seasons16 — Mali and the Garden of Four Seasons ===
+Art folder: /workspace/new-story-jigsaw/seasons-art/  (files chapter-1.webp .. chapter-16.webp)
+Description: Walk through four seasons in Grandma's secret garden to wake an ancient tree
+Stage 1 (EN): The Secret Door | Find the hidden door | Mali finds a little wooden door hidden behind the jasmine bushes in Grandma's garden. | When she opens it, warm sunlight pours out.
+All 16 stages (EN): title | goal | line 1 | line 2
+ 1. The Secret Door | Find the hidden door | Mali finds a little wooden door hidden behind the jasmine bushes in Grandma's garden. | When she opens it, warm sunlight pours out.
+ 2. Golden Summer | Walk into summer | On the other side it is summer, and the sunflowers are taller than Mali. | An orange butterfly says the ancient tree in the middle has been asleep for years.
+ 3. Summer Fruit | Collect the sun seed | Mangoes and lychees hang heavy and sweet on the trees. | Mali receives the first seed: the Seed of Sun.
+ 4. Toward the Rains | Follow the thunder | The sky grows cloudy and soft thunder rumbles. | The butterfly leads Mali to a bridge into the rainy season.
+ 5. Gentle Rain | Walk in the rain | Rain begins to fall, and Mali uses a giant taro leaf as an umbrella. | Little frogs sing a welcome from the puddles.
+ 6. The Lotus Pond | Help the snail | A snail is stuck on a lotus leaf in the middle of the pond. | Mali holds out a twig so it can climb back to shore.
+ 7. Rainbow After Rain | Receive the rain seed | The rain stops and a rainbow stretches across the sky. | The snail gives Mali the Seed of Rain to say thank you.
+ 8. The Cool Breeze | Get ready for the cold | A cool wind blows, and the leaves turn red and yellow. | Mali wraps herself in the scarf Grandma once knitted for her.
+ 9. White Winter | Walk on the snow | Everything turns white, and snow falls like petals. | A white rabbit leads the way along tiny footprints.
+10. The Snow Rabbit Burrow | Warm up together | The rabbit invites Mali into its home under a pine tree to warm up. | The rabbit family shares hot ginger tea.
+11. Ice Stars | Receive the snow seed | That night the stars sparkle like ice. | The rabbit gives Mali the Seed of Snow, clear as glass.
+12. The Snow Melts | Walk toward spring | Soft sunlight melts the snow, and drops of water sparkle. | Tiny green shoots peek out of the ground.
+13. Blossom Season | Enjoy the flowers | Flowers of every colour bloom together as bees buzz about. | The queen bee gives Mali the Seed of Blossoms.
+14. The Ancient Tree | Find the sleeping tree | In the middle of the garden stands a great tree with no leaves at all. | Mali gently places all four seeds at its roots.
+15. The Tree Awakens | Wake the tree | Slowly the tree wakes and grows leaves, flowers and fruit all at once. | All four seasons now live on a single tree.
+16. Back to Grandma | Tell Grandma everything | Mali comes back out, and Grandma is waiting with a knowing smile. | Every season has its own beauty, just like every part of life. The End.
+
+=== snowfox16 — The Snow Fox and the Northern Lights ===
+Art folder: /workspace/new-story-jigsaw/snow-fox-art/  (files chapter-1.webp .. chapter-16.webp)
+Description: Cross the ice with a little fox to discover the secret of the northern lights
+Stage 1 (EN): The Snow Den | Meet little Pui | Pui is a little snow fox who lives in a den under the snow with his mother. | One night he sees green light waving across the sky.
+All 16 stages (EN): title | goal | line 1 | line 2
+ 1. The Snow Den | Meet little Pui | Pui is a little snow fox who lives in a den under the snow with his mother. | One night he sees green light waving across the sky.
+ 2. The Giant Fox Tail | Wonder about the lights | "Mama, is that the tail of a giant fox?" | His mother smiles. "Go and find the answer yourself."
+ 3. Morning Departure | Begin the adventure | Pui sets off on a morning when the snow sparkles. | His tiny pawprints stretch across the white plain.
+ 4. The Frozen Lake | Cross the lake carefully | The lake is frozen so clear that Pui can see fish beneath. | He walks slowly and listens to the ice before each step.
+ 5. The Snowy Owl | Ask the wise one | A snowy owl on a pine branch says the lights are clearest from the far mountain. | "But first you must pass the sea and the storm."
+ 6. The Kind Walrus | Rest by the sea | On the shore a round walrus is sunbathing. | It shares a warm spot so Pui can take a nap.
+ 7. The Ice Floe | Drift across the sea | Pui hops onto an ice floe and drifts across the dark sea. | Baby seals pop up to say hello all the way.
+ 8. The Whale Song | Listen to the sea | Humpback whales sing deep songs beneath the sea. | Pui feels that he is not travelling alone.
+ 9. Polar Bear Family | Meet the bears | Across the sea, a mother polar bear and two cubs play in the snow. | The cubs ask to walk with Pui to the foot of the mountain.
+10. The Blizzard | Brave the storm together | A blizzard roars until no one can see the path. | They huddle close to keep each other warm.
+11. The Blue Ice Cave | Shelter in the cave | They find an ice cave whose walls glow clear blue. | The cubs tell stories until the storm passes.
+12. The Climb | Climb the mountain | Pui climbs the steep mountain alone. | The wind is icy, but his heart is warm.
+13. The Starry Summit | Wait for the lights | At the summit, millions of stars fill the sky. | Pui sits and waits patiently.
+14. The Lights Dance | See the aurora | Green, pink and purple lights dance across the sky. | They are not a fox tail, but more beautiful than Pui ever dreamed.
+15. The True Answer | Learn the truth | The owl lands beside him: "The lights come from the sun's wind touching our sky." | Pui smiles. The truth is just as magical as a story.
+16. Home with a Story | Tell Mama everything | Pui returns to the den and tells his mother about his journey all night. | Curiosity leads us to new friends and a wide, wonderful world. The End.

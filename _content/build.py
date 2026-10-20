@@ -13,3 +13,16 @@ for sid,d in S.items():
     obj={'id':sid,'number':d['number'],'titles':d['titles'],'locales':loc,'images':imgs,'cover':imgs[0],'descriptions':d['desc']}
     open(f'story-catalog/{sid}.js','w').write(f'STORY_CATALOG["{sid}"]='+json.dumps(obj,ensure_ascii=False,separators=(',',':'))+';\n')
     print(sid,d['number'],d['art'])
+
+# ---- extra languages ----
+LANGS=['th','en','es','zh','ja','ko','vi','id','ms','fil','hi','ar','fr','de','it','pt','ru','tr','pl','nl','uk']
+for sid,d in S.items():
+    p=f'story-catalog/{sid}.js'; obj=json.loads(open(p).read().split('=',1)[1].rstrip().rstrip(';'))
+    for lg in LANGS[3:]:
+        sp=importlib.util.spec_from_file_location('st',f'_content/i18n/st_{lg}.py');m=importlib.util.module_from_spec(sp);sp.loader.exec_module(m)
+        t,ds,st=m.ST[sid]; assert len(st)==16 and all(len(x)==4 and all(y.strip() for y in x) for x in st),(lg,sid)
+        obj['titles'][lg]=t; obj['descriptions'][lg]=ds
+        obj['locales'][lg]=[list(x)+[d['colors'][i//4]] for i,x in enumerate(st)]
+    assert set(obj['locales'])==set(LANGS)
+    open(p,'w').write(f'STORY_CATALOG["{sid}"]='+json.dumps(obj,ensure_ascii=False,separators=(',',':'))+';\n')
+print('merged',len(LANGS),'langs')
