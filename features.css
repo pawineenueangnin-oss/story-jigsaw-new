@@ -55,3 +55,7 @@ html[data-text=l] #storyBook .sb-img{max-height:32dvh}
 #storyAlbum .sj-sticker-tip{margin:4px 0 6px;font-size:11px}
 #storyAlbum{overflow-y:auto}
 #storyAlbum .album-page{min-height:92px}
+/* Gameplay banner strip: board area shrinks (screen bottom = --ad-space); 16px gap + separator above the ad */
+html.sj-play-banner #play{padding-bottom:calc(26px + env(safe-area-inset-bottom,0px))!important;box-sizing:border-box}
+html.sj-play-banner #play::after{content:"";position:absolute;left:12px;right:12px;bottom:10px;height:2px;border-radius:2px;background:#ffffff40;pointer-events:none;z-index:2}
+html.sj-banner-locked .banner{pointer-events:none!important}

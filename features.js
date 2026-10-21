@@ -84,9 +84,9 @@ function startAuto(){
 }
 function openStoryBook(){
  stopNarration();if(album.open)album.close();if($('settingsDialog'))$('settingsDialog').close();
- bookPage=0;bookAuto=false;renderBook();nativeBanner(false);book.showModal();
+ bookPage=0;bookAuto=false;renderBook();book.showModal();lastBanner=null;syncBanner();
 }
-book.addEventListener('close',()=>{stopBook();nativeBanner(menuVisible());});
+book.addEventListener('close',()=>{stopBook();syncBanner();});
 window.openStoryBook=openStoryBook;
 const baseRead=readCollectedStory;
 readCollectedStory=function(){if(collectedStory().size===storyCount())openStoryBook();else baseRead();};
@@ -97,7 +97,7 @@ openStoryAlbum=function(){
  baseAlbum();
  if(collectedStory().size===storyCount()){const r=album.querySelector('.story-collection');if(r)r.textContent=FT('✨ Read the whole story');}
  const badges=$('albumBadges');if(badges&&!$('stickerShelf'))badges.after(stickerShelf());
- nativeBanner(menuVisible());
+ syncBanner();
 };
 $('openStoryAlbum').onclick=()=>openStoryAlbum();
 
@@ -129,6 +129,41 @@ openGameSettings=function(){
  group.querySelectorAll('button').forEach(x=>x.setAttribute('aria-checked',String(x.classList.contains('sj-ts-'+document.documentElement.dataset.text))));
 };
 document.querySelectorAll('button').forEach(b=>{if(b.onclick===baseSettings)b.onclick=()=>openGameSettings();});
+
+
+/* ---------- 6. Banner placement: menu, album and puzzle board ----------
+   Shown on menu/album and on the gameplay board in its own reserved strip
+   (screens shrink via --ad-space; a 16px gap + separator sits above it).
+   Hidden on results, story scenes and the storybook. Made non-interactive
+   while a piece is touched and for 500ms after release. */
+const playEl=document.getElementById('play'),winEl=document.getElementById('win'),cinemaEl=document.getElementById('storyCinema');
+function playVisible(){return !playEl.classList.contains('hide')&&!playEl.hidden;}
+function wantBanner(){
+ if(book.open||(cinemaEl&&!cinemaEl.hidden)||document.getElementById('inter')?.classList.contains('show'))return false;
+ if(menuVisible())return true;
+ return playVisible()&&!playEl.classList.contains('win-open')&&!winEl.classList.contains('show');
+}
+let lastBanner=null;
+function syncBanner(){
+ const v=wantBanner(),onPlay=v&&playVisible();
+ document.documentElement.classList.toggle('sj-play-banner',onPlay);
+ if(v!==lastBanner){lastBanner=v;nativeBanner(v);}
+}
+window.syncBanner=syncBanner;
+const baseShow2=show;show=function(el){baseShow2(el);lastBanner=null;syncBanner();};
+const mo=new MutationObserver(()=>syncBanner());
+for(const n of [playEl,winEl,cinemaEl,document.getElementById('inter'),document.getElementById('menu')])if(n)mo.observe(n,{attributes:true,attributeFilter:['class','hidden']});
+let touchTimer=null,bannerLocked=false;
+function setBannerTouchable(on){
+ if(bannerLocked===!on)return;bannerLocked=!on;
+ try{if(window.AndroidAds&&AndroidAds.setBannerTouchable)AndroidAds.setBannerTouchable(on);}catch(e){}
+ document.documentElement.classList.toggle('sj-banner-locked',!on);
+}
+window.sjBannerTouchable=()=>!bannerLocked;
+playEl.addEventListener('pointerdown',()=>{clearTimeout(touchTimer);setBannerTouchable(false);},{capture:true,passive:true});
+const release=()=>{clearTimeout(touchTimer);touchTimer=setTimeout(()=>setBannerTouchable(true),500);};
+for(const t of ['pointerup','pointercancel','lostpointercapture'])document.addEventListener(t,release,{capture:true,passive:true});
+syncBanner();
 
 /* ---------- 5. Offline play: service worker with versioned cache ---------- */
 if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1')&&!/[?&]nosw=1/.test(location.search)){
