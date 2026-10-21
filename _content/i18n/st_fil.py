@@ -4,7 +4,7 @@ ST = {
 ('Luntiang palayan','Maglakad sa palayan','Naglakad si Khao Hom sa matingkad na luntiang palayan habang lumilipad ang mga tagak sa itaas.','Maingat niyang hawak ang parol para hindi ito masyadong umuga.'),
 ('Ang tulay na kawayan','Matapang na tumawid sa sapa','Makitid at umuuga ang tulay na kawayan. Huminga nang malalim si Khao Hom.','Hakbang-hakbang, tumawid siya sa sapang puno ng lotus.'),
 ('Ang bahang daan','Ingatan ang ilaw','Kahihinto lang ng ulan, at naging malaking lusak ang daan.','Itinaas ni Khao Hom ang parol, at kumislap ang liwanag sa tubig na parang maliit na bituin.'),
-('Ang naipit na otter','Tulungan ang kaibigang nangangailangan','Isang maliit na otter ang naipit sa mga water hyacinth at humihingi ng tulong.','Dahan-dahang ibinaba ni Khao Hom ang parol at gumawa ng daan gamit ang kanyang nguso.'),
+('Ang naipit na otter','Tulungan ang kaibigang nangangailangan','Isang maliit na otter ang naipit sa mga water lily at humihingi ng tulong.','Dahan-dahang ibinaba ni Khao Hom ang parol at gumawa ng daan gamit ang kanyang trompa.'),
 ('Ang naligaw na tagak','Ituro ang daan gamit ang liwanag','Sa hapon, bumaba ang makapal na ulap. Hindi mahanap ng isang tagak ang pugad niya.','Itinaas ni Khao Hom ang parol, at sinundan ng tagak ang liwanag pauwi.'),
 ('Ang pagod na kalabaw','Tumulong sa pagtulak','Nabaon nang malalim sa putik ang kariton ng isang matandang kalabaw.','Itinulak ni Khao Hom nang buong lakas hanggang umikot muli ang mga gulong.'),
 ('Mga bagong kaibigan','Sabay-sabay na maglakbay','Gusto ng otter, ng tagak, at ng kalabaw na sumama sa pista.','Mas maikli ang mahabang daan kapag kasama ang mga kaibigan.'),
