@@ -165,6 +165,19 @@ const release=()=>{clearTimeout(touchTimer);touchTimer=setTimeout(()=>setBannerT
 for(const t of ['pointerup','pointercancel','lostpointercapture'])document.addEventListener(t,release,{capture:true,passive:true});
 syncBanner();
 
+/* ---------- 7. RTL: keep numeric counters ("0 / 25", "★ 3/48", "1 / 16") in reading order ---------- */
+const NUM_RE=/(^|[^\u2066\d])(\d+(?:[.:]\d+)?\s*\/\s*\d+)(?![\d\u2069])/g;
+function isolateNums(root){
+ if(document.documentElement.dir!=='rtl')return;
+ const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;
+ while((n=w.nextNode())){const t=n.nodeValue;if(!t||t.indexOf('/')<0)continue;NUM_RE.lastIndex=0;if(!NUM_RE.test(t))continue;
+  const v=t.replace(NUM_RE,(m,a,b)=>a+'\u2066'+b+'\u2069');if(v!==t)n.nodeValue=v;}
+}
+const numMo=new MutationObserver(ms=>{if(document.documentElement.dir!=='rtl')return;for(const m of ms){if(m.type==='characterData')isolateNums(m.target.parentNode||document.body);else m.addedNodes.forEach(x=>{if(x.nodeType===3)isolateNums(x.parentNode||document.body);else if(x.nodeType===1)isolateNums(x);});}});
+numMo.observe(document.body,{childList:true,subtree:true,characterData:true});
+new MutationObserver(()=>isolateNums(document.body)).observe(document.documentElement,{attributes:true,attributeFilter:['dir']});
+isolateNums(document.body);
+
 /* ---------- 5. Offline play: service worker with versioned cache ---------- */
 if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1')&&!/[?&]nosw=1/.test(location.search)){
  window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').then(r=>{r.update&&r.update();}).catch(()=>{});});
