@@ -1093,7 +1093,10 @@ let storyMode=false;
 const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.search).get("test")==="1";
     const WEB_AD_PREVIEW=STORY_TEST_MODE; // fake ad placeholders only with ?test=1 (AdSense policy)
     const PRIVACY_POLICY_URL = "privacy.html";
-    const INTER_MIN_GAP_MS = 180000, INTER_SESSION_GRACE_MS = 240000;
+    const INTER_MIN_GAP_MS = 120000, INTER_SESSION_GRACE_MS = 120000, INTER_EVERY_CLEARS = 3;
+    // Ad clock: real time; with ?test=1 a simulated offset (window.__adClockOffset ms) can be added for testing.
+    const adNow=()=>Date.now()+((typeof WEB_AD_PREVIEW!=='undefined'&&WEB_AD_PREVIEW)?(Number(window.__adClockOffset)||0):0);
+    const AD_SESSION_START=Date.now();
     const WEB_HELPER_COOLDOWN_MS=60000; let lastWebHelperAt=-1e12, overlayPauseAt=0, overlayPauseBase=0;
     function storyOverlayOpen(){return !!document.querySelector("dialog[open]")||!!document.querySelector("#inter.show,#rewardedAd.show")||document.hidden;}
     let playStart = 0, moveCount = 0, combo = 0, clockTimer = null, score = 0;
@@ -1429,6 +1432,7 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
         document.getElementById("winHead").textContent = passed ? "Stage cleared 🎉" : "Need 4 stars";
         document.getElementById("winStats").textContent = "Score "+score+" · Time "+Math.floor(secs/60)+":"+String(secs%60).padStart(2,"0");
         // Always show the finished picture + stars. Advance only if >= 4 stars.
+        const adWasComplete=storyMode&&!customPlay&&storyDoneFor(level).size===storyCount();
         if (passed && !customPlay) markDone(stage);
         if(storyMode && earnedBadge(level))writeProgress(storyStoragePrefix()+"-badge-"+level,"1");
         paintWinPic(passed); // win image always drawn; gallery only marks cleared if passed
@@ -1461,7 +1465,7 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
         } catch(e) {}
         clearTimeout(window._winTimer);
         playWinSound();
-        if(!customPlay){winsThisSession += 1; adWins++; if(!readProgress("tap-first-three-done")){firstClears++;writeProgress("tap-first-clears",String(firstClears));if(firstClears>=3)writeProgress("tap-first-three-done","1");}}
+        if(!customPlay){winsThisSession += 1; adWins++; if(storyMode&&storyDoneFor(level).size===storyCount()&&(!adWasComplete||stage===storyCount())){adWins++;adStoryDone=true;} if(!readProgress("tap-first-three-done")){firstClears++;writeProgress("tap-first-clears",String(firstClears));if(firstClears>=3)writeProgress("tap-first-three-done","1");}}
         window._winTimer = setTimeout(() => {
           if(storyMode){showStoryCinema();}else{document.getElementById("win").classList.add("show");play.classList.add("win-open");}
           // Ads run only on an explicit results navigation, never here.
@@ -1686,7 +1690,7 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
     }
     function grantHintReward(){
       resumeClockAfterAd();
-      if(playing && hintBusy){skipNextInter=true;lastFullScreen=Date.now();}
+      if(playing && hintBusy){skipNextInter=true;lastFullScreen=adNow();}
       try {
         if (!playing || !hintBusy) return;
         usedHint=true;undoSnapshot=null;
@@ -1899,7 +1903,7 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
 </script>
 
 <script>
-let adWins=0,lastFullScreen=Date.now(),skipNextInter=false,adContinuation=null;
+let adWins=0,adStoryDone=false,lastFullScreen=AD_SESSION_START,skipNextInter=false,adContinuation=null;
 let firstClears=Number(readProgress('tap-first-clears'))||0;
 let storyTimer=null,storyActive=false,storyFinish=null;
 const nativeBanner=(visible)=>{try{if(window.AndroidAds&&AndroidAds.setBannerVisible)AndroidAds.setBannerVisible(visible)}catch{}const b=document.querySelector('.banner');if(b)b.style.display=visible&&!window.AndroidAds&&WEB_AD_PREVIEW?'':'none';document.documentElement.style.setProperty('--ad-space',visible&&!window.AndroidAds&&WEB_AD_PREVIEW?'calc(64px + env(safe-area-inset-bottom))':'0px')};
@@ -1944,9 +1948,14 @@ document.querySelectorAll('[data-story-level]').forEach(button=>button.onclick=a
 
 function completeAd(){const next=adContinuation;adContinuation=null;if(next)next()}
 window.onInterstitialFinished=completeAd;
-window.onInterstitialShown=()=>{lastFullScreen=Date.now();adWins=0};
-window.onRewardedShown=()=>{lastFullScreen=Date.now();skipNextInter=true};
-function afterResultAd(next){if(adContinuation)return;if(customPlay){next();return}if(skipNextInter){skipNextInter=false;adWins=0;next();return}if(!(storyMode&&stage===storyCount()&&storyDoneFor(level).size===storyCount())||Date.now()-lastFullScreen<INTER_MIN_GAP_MS||performance.now()<INTER_SESSION_GRACE_MS){next();return}adContinuation=next;stopMusic();if(window.AndroidAds&&AndroidAds.showInterstitial){try{AndroidAds.showInterstitial()}catch{completeAd()}}else if(!WEB_AD_PREVIEW){adContinuation=null;adWins=0;next()}else{document.getElementById('inter').classList.add('show');document.getElementById('closeAd').focus();lastFullScreen=Date.now();adWins=0}}
+window.onInterstitialShown=()=>{lastFullScreen=adNow();adWins=0;adStoryDone=false};
+window.onRewardedShown=()=>{lastFullScreen=adNow();skipNextInter=true};
+// Interstitials only at natural breaks: when the player leaves the result screen (after the story scene).
+// Eligible every INTER_EVERY_CLEARS clears (stage clears + whole-story completion) or right after a whole story,
+// never in photo play, never right after a rewarded ad, and only with the min gap and session grace respected.
+function interEligible(){const t=adNow();if(customPlay||playing)return false;if(!(adStoryDone||adWins>=INTER_EVERY_CLEARS))return false;return t-lastFullScreen>=INTER_MIN_GAP_MS&&t-AD_SESSION_START>=INTER_SESSION_GRACE_MS;}
+window.__adState=()=>({adWins,adStoryDone,sinceLast:adNow()-lastFullScreen,sinceStart:adNow()-AD_SESSION_START,skipNextInter,eligible:interEligible()});
+function afterResultAd(next){if(adContinuation)return;if(customPlay){next();return}if(skipNextInter){skipNextInter=false;adWins=0;adStoryDone=false;next();return}if(!interEligible()){next();return}window.__interCount=(window.__interCount||0)+1;adContinuation=next;stopMusic();if(window.AndroidAds&&AndroidAds.showInterstitial){try{AndroidAds.showInterstitial()}catch{completeAd()}}else if(!WEB_AD_PREVIEW){adContinuation=null;adWins=0;adStoryDone=false;next()}else{document.getElementById('inter').classList.add('show');document.getElementById('closeAd').focus();lastFullScreen=adNow();adWins=0;adStoryDone=false}}
 document.getElementById('closeAd').onclick=()=>{document.getElementById('inter').classList.remove('show');completeAd()};
 const cinema=document.createElement('div');cinema.id='storyCinema';cinema.hidden=true;document.body.append(cinema);
 function closeStory(){cinema.classList.remove('story-ending');stopNarration();clearTimeout(storyTimer);storyActive=false;cinema.hidden=true;storyFinish=null}
