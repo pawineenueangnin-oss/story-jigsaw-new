@@ -6,12 +6,12 @@
   <meta name="theme-color" content="#2b1a0e" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-  <title>Story Jigsaw Tales</title>
+  <title>Moonpiece Tales</title>
   <meta name="description" content="Picture stories to piece together – six 3D story jigsaws for kids in 21 languages." />
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Story Jigsaw Tales" />
+  <meta property="og:title" content="Moonpiece Tales" />
   <meta property="og:description" content="Picture stories to piece together – six 3D story jigsaws for kids in 21 languages." />
   <meta property="og:url" content="https://pawineenueangnin-oss.github.io/story-jigsaw-new/" />
   <meta property="og:image" content="https://pawineenueangnin-oss.github.io/story-jigsaw-new/branding/og.jpg" />
@@ -682,20 +682,6 @@
 @keyframes resultAppear { from { opacity:0; transform:translateY(12px) scale(.97); } to { opacity:1; transform:none; } }
 @media(prefers-reduced-motion:reduce) { .tile.piece-celebrate,#win.show .win-card { animation:none; } }
 
-.rank-status { margin:0 0 12px; color:#285c3f; font-size:13px; font-weight:700; }
-.rank-status:empty { display:none; }
-.ranking-dialog { border:1px solid #d8c796; border-radius:22px; padding:22px; width:min(92vw,430px); max-height:85dvh; overflow:auto; background:#fffaf0; color:#2c4936; }
-.ranking-dialog::backdrop { background:#10251ddd; }
-.ranking-dialog header { display:flex; align-items:center; justify-content:space-between; }
-.ranking-dialog h2 { margin:0 0 12px; font-size:22px; }
-.ranking-dialog header button { border:0; background:none; font-size:28px; color:#2c4936; }
-.rank-filters { display:flex; gap:10px; }
-.rank-filters select,.ranking-dialog input { border:1px solid #d3c9ae; padding:12px; border-radius:10px; background:white; min-width:0; width:100%; font:inherit; }
-.ranking-dialog table { border-collapse:collapse; width:100%; font-size:13px; }
-.ranking-dialog th,.ranking-dialog td { padding:10px 5px; text-align:left; border-bottom:1px solid #e8e0cd; overflow-wrap:anywhere; }
-.ranking-dialog .my-rank { background:#dcebdc; font-weight:700; }
-.rank-note { color:#77806f; font-size:12px; line-height:1.5; }
-.menu-rank { position:absolute; bottom:18px; left:50%; transform:translateX(-50%); border:1px solid #edddaa; background:#264d35; color:white; border-radius:20px; padding:10px 20px; font-weight:700; z-index:5; }
 #playerForm .btn { margin-top:12px; width:100%; }
 #playerError { color:#a5362a; }
 
@@ -711,11 +697,6 @@
 #play .hint-btn { height:48px; min-width:64px; padding:0 10px; }
 #picker .grid { width:min(100%,650px); margin:auto; }
 #picker .topbar { width:min(100%,650px); align-self:center; }
-.menu-tools { margin-bottom:auto; width:min(100%,360px); display:flex; justify-content:center; gap:10px; flex-shrink:0; }
-.menu-tools .menu-rank,.menu-stats { position:static; transform:none; border:1px solid #edddaa; background:#264d35; color:white; border-radius:18px; padding:12px 16px; font-weight:700; min-height:44px; }
-.stats-row { display:flex; justify-content:space-between; gap:12px; padding:14px 0; border-bottom:1px solid #e8e0cd; font-size:14px; }
-.stats-row strong { font-size:21px; }
-.ranking-dialog { max-width:calc(100vw - 24px); max-height:calc(var(--game-height, 100dvh) - 24px); }
 @media(orientation:landscape) and (max-height:600px) {
  #play { display:grid; grid-template-columns:minmax(140px,200px) minmax(0,1fr); grid-template-rows:auto auto 1fr; align-content:center; align-items:start; gap:8px 18px; max-width:1000px; margin:auto; }
  #play .play-nav { grid-column:1;grid-row:1; flex-wrap:wrap; }
@@ -735,8 +716,6 @@
 #menu { inset:auto; top:50%;left:50%;right:auto;bottom:auto;transform:translate(-50%,-50%);width:min(100vw,56.171875dvh);height:min(var(--game-height, 100dvh),178.025vw);padding:0!important;overflow:hidden;gap:0; background-size:100% 100%; }
 #menu .card { display:none; }
 #menu .hit { display:block; }
-#picker .menu-tools { margin:8px auto 0; width:min(100%,650px); }
-#picker .menu-tools button { font-size:12px; min-height:40px; padding:8px 14px; }
 
 :root { --ad-space:calc(64px + env(safe-area-inset-bottom)); --game-height:calc(100dvh - var(--ad-space)); }
 .screen { bottom:var(--ad-space); }
@@ -754,7 +733,6 @@
 #win .win-btn:not(.primary) { background:#fff; color:#27543b; border:1px solid #cdbf98; box-shadow:0 3px 0 #d9cda9; text-shadow:none; }
 #photoMenu .levels button { justify-content:center; text-align:center; }
 .hint-btn .ad-tag { font-size:9px; font-weight:800; padding:1px 4px; margin-left:2px; border-radius:6px; background:rgba(0,0,0,.25); color:#fff; vertical-align:middle; }
-.menu-tools { flex-wrap:wrap; }
 
 #menu{background:radial-gradient(ellipse at top,#577a43,#142e22)!important;inset:0!important;transform:none!important;width:100%!important;height:100%!important;padding:16px 20px calc(16px + var(--ad-space,0px))!important}.story-hub h1{color:#ffe4a1}.story-hub img{max-height:31dvh;object-position:center 43%}.story-hub p{margin:10px 0}.story-hub .story-start{margin:10px 0}.story-note{font-size:12px!important}.story-picture .story-next-frame{position:absolute;inset:0;opacity:0;object-fit:cover;transform:scale(1.08);transition:opacity 1.2s,transform 3s}.story-journey .story-next-frame{opacity:1;transform:scale(1)}.story-celebrate{box-shadow:0 0 45px #ffdc79;animation:storyGlow 1.5s ease-in-out infinite alternate}@keyframes storyGlow{to{box-shadow:0 0 65px #ffdc79}}#storyCinema{background:#10251ff7}.story-panel{width:min(100%,560px)}.story-picture{max-height:60dvh}.story-panel p{min-height:60px}@media(max-height:650px){.story-hub h1{font-size:25px;margin:6px}.story-hub img{max-height:25dvh}.story-hub p{font-size:13px;margin:6px}.story-hub .story-start{min-height:48px;margin:6px 0}.story-note{margin:6px!important}.story-picture{max-height:52dvh}.story-panel h2{font-size:20px}.story-panel p{font-size:13px}}@media(prefers-reduced-motion:reduce){.story-next-frame{transition:none!important}.story-celebrate{animation:none!important}}
 
@@ -948,11 +926,13 @@
 #languageBar{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(118px,1fr));gap:6px;max-height:min(60vh,520px);overflow:auto}
 #languageBar>span{display:none}
 #languageBar button{min-width:0!important;width:100%;font-size:14px!important}
+body.no-tts #bookListen,body.no-tts #bookAuto,body.no-tts #albumRead,body.no-tts #narrationToggle,body.no-tts label:has(#setting-narration){display:none!important}
+body.android-app #photoMenu{display:none!important}
 </style>
 </head>
 <body>
-  <section class="screen" id="loader"><div class="loader-slides" aria-hidden="true"><i class="loader-cover"></i></div><div class="loading-title"><img src="branding/story-icon-v2.webp" alt=""><div><h1 class="game-title" data-ui-localized>Story Jigsaw Tales</h1><p class="loader-tag">Picture stories to piece together</p></div></div><div class="loading-progress"><p id="loadText">Loading game...</p><div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><i id="bar"></i></div><div id="pct">0%</div></div></section>
-  <script>(function(){const t=(window.GAME_CONFIG&&GAME_CONFIG.title)||"Story Jigsaw Tales";document.title=t;document.querySelectorAll(".game-title").forEach(e=>e.textContent=t);})();</script>
+  <section class="screen" id="loader"><div class="loader-slides" aria-hidden="true"><i class="loader-cover"></i></div><div class="loading-title"><img src="branding/story-icon-v2.webp" alt=""><div><h1 class="game-title" data-ui-localized>Moonpiece Tales</h1><p class="loader-tag">Picture stories to piece together</p></div></div><div class="loading-progress"><p id="loadText">Loading game...</p><div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100"><i id="bar"></i></div><div id="pct">0%</div></div></section>
+  <script>(function(){const t=(window.GAME_CONFIG&&GAME_CONFIG.title)||"Moonpiece Tales";document.title=t;document.querySelectorAll(".game-title").forEach(e=>e.textContent=t);})();</script>
 
   <section class="screen hide" id="menu"><div class="story-hub">
 <div id="storyLibrary"><small>STORY PUZZLE</small><h1>ห้องสมุดนิทาน</h1><p>เลือกเรื่อง แล้วต่อภาพทีละเหตุการณ์</p><div class="story-library-grid">
@@ -1031,11 +1011,9 @@
         </div>
         <p id="winText" class="win-text">Next picture unlocked</p>
         <p id="winStats" class="win-stats"></p>
-        <p id="rankStatus" class="rank-status" aria-live="polite"></p>
         <div class="win-actions">
           <button class="btn primary win-btn" id="nextBtn" type="button">Next stage</button>
           <button class="btn win-btn" id="retryBtn" type="button">Play again</button>
-          <button class="result-back" id="rankOpen" type="button">Leaderboard</button>
           <button class="result-back" id="resultBack" type="button">Back to stages</button>
         </div>        <div class="win-gallery-wrap" id="winGalleryWrap">
           <span class="win-gallery-label">Cleared stages</span>
@@ -1046,14 +1024,6 @@
     </div>
   </section>
 
-  <dialog id="statsDialog" class="ranking-dialog"><header><h2>Game statistics</h2><button id="statsClose" type="button" aria-label="Close statistics">×</button></header><div id="statsContent" aria-live="polite"></div><p class="rank-note">Counts are based on browser/app sessions, not verified people. Clearing app data or using another browser can count again. Android first opens are not Google Play installs.</p><p id="statsSince" class="rank-note"></p></dialog>
-  <dialog id="rankingDialog" class="ranking-dialog">
-    <header><h2>Leaderboard</h2><button id="rankClose" type="button" aria-label="Close leaderboard">×</button></header>
-    <div class="rank-filters"><select id="rankMode" aria-label="Difficulty"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select><select id="rankStage" aria-label="Stage"></select></div>
-    <p id="rankSummary" aria-live="polite"></p><div id="rankRows"></div>
-    <p class="rank-note">Fewest swaps wins. Time breaks ties. Your best result is kept. Hints are for practice.</p>
-  </dialog>
-  <dialog id="playerDialog" class="ranking-dialog"><form id="playerForm"><h2>Your player name</h2><p>This name appears on the leaderboard.</p><input id="playerName" maxlength="24" required autocomplete="nickname" placeholder="Enter your name"><p id="playerError" aria-live="polite"></p><button class="btn primary" type="submit">Save & play</button><button id="playerSkip" type="button" class="result-back">Play without ranking</button></form></dialog>
   <div class="banner" role="note"><b>Banner preview</b><span>Layout example · not a Google ad</span></div>
   <div id="inter">
     <div class="slot"><span class="ad-preview-label">INTERSTITIAL PREVIEW</span><strong>Full-screen ad area</strong><small>Layout example · not a Google ad</small></div>
@@ -1138,65 +1108,7 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
     let undoSnapshot=null,undoUsed=false;
     let startingWrong = 0;
     let startingMinimum=1;
-    // App build: online ranking/statistics backend is not reachable, so all online UI is hidden.
-    const ONLINE_FEATURES = false;
-    const activityPlatform=window.AndroidAds?'android':'web';
-    let visitPromise=null;
-    function recordActivity(kind){if(!ONLINE_FEATURES)return Promise.resolve();const body={id:crypto.randomUUID(),kind,platform:activityPlatform};return api('/api/activity',body).catch(()=>{});}
-    async function loadStats(){
-      const host=document.getElementById('statsContent');host.replaceChildren();host.textContent='Loading…';
-      try{const data=await api('/api/stats');host.replaceChildren();[['Visitors (devices/browsers)',data.visitors],['Players',data.players],['Rounds started',data.rounds],['Players today',data.today],['Android first opens',data.androidFirstOpens]].forEach(([label,value])=>{const row=document.createElement('div');row.className='stats-row';rankingText(row,'span',label);rankingText(row,'strong',Number(value).toLocaleString());host.appendChild(row)});document.getElementById('statsSince').textContent=data.since?'Tracking since '+new Date(data.since).toLocaleDateString('en-GB',{timeZone:'Asia/Bangkok'})+' · daily counts use Thailand time.':'';}catch(e){host.textContent='Statistics unavailable. ';const retry=rankingText(host,'button','Try again');retry.onclick=loadStats;}
-    }
-    document.getElementById('statsClose').onclick=()=>document.getElementById('statsDialog').close();
-    let onlineRound = null, moveLog = [], usedHint = false;
-    let onlineName = null, playerLoaded = false, startRequest = 0;
-    async function api(path,body){
-      throw new Error("Online ranking is unavailable in this local ad test app");
-      const controller=new AbortController(); const timeout=setTimeout(()=>controller.abort(),12000);
-      try { const response=await fetch(path,{method:body?'POST':'GET',headers:body?{'Content-Type':'application/json'}:{},body:body?JSON.stringify(body):undefined,signal:controller.signal});const data=await response.json();if(!response.ok)throw Error(data.error||'Online ranking unavailable');return data; } finally { clearTimeout(timeout); }
-    }
-    async function ensurePlayer(){
-      if(visitPromise)await visitPromise;
-      if(!playerLoaded){ const data=await api('/api/player');onlineName=data.name;playerLoaded=true; }
-      if(onlineName)return true;
-      return new Promise(resolve=>{
-        const dialog=document.getElementById('playerDialog'),input=document.getElementById('playerName'),error=document.getElementById('playerError');
-        const done=value=>{dialog.close();resolve(value)};
-        document.getElementById('playerSkip').onclick=()=>done(false);
-        dialog.oncancel=()=>resolve(false);
-        document.getElementById('playerForm').onsubmit=async event=>{event.preventDefault();const button=event.submitter;button.disabled=true;error.textContent='';try { const data=await api('/api/player',{name:input.value.trim()});onlineName=data.name;done(true); }catch(e){error.textContent=e.message}finally{button.disabled=false}};
-        dialog.showModal();input.focus();
-      });
-    }
-    async function beginRankedRound(mode,n){
-      if(!ONLINE_FEATURES)return null;
-      try { if(await ensurePlayer())return await api('/api/start',{mode,stage:n}); }catch(e){}
-      return null;
-    }
-    async function submitRanking(){
-      const status=document.getElementById('rankStatus'),round=onlineRound,log=moveLog.slice(),session=sessionId;
-      if(customPlay||!ONLINE_FEATURES){status.textContent='';return;}
-      if(usedHint){status.textContent='Practice round · hint used';return;}
-      if(!round){status.textContent='Practice round · online ranking not connected';return;}
-      status.textContent='Checking your rank…';
-      try {const data=await api('/api/finish',{id:round.id,moves:log});if(session!==sessionId)return;status.textContent=data.me?'Your best rank: #'+data.me.rank+' of '+data.total+' players':'';}catch(e){if(session===sessionId){status.textContent='Result not saved · tap to retry';status.onclick=()=>{status.onclick=null;submitRanking()};}}
-    }
-    function rankingText(parent,tag,value){const node=document.createElement(tag);node.textContent=value;parent.appendChild(node);return node;}
-    let rankRequest=0;
-    async function loadRanking(){
-      const request=++rankRequest,summary=document.getElementById('rankSummary'),rows=document.getElementById('rankRows');rows.replaceChildren();summary.textContent='Loading…';
-      try {const data=await api('/api/ranking?mode='+document.getElementById('rankMode').value+'&stage='+document.getElementById('rankStage').value);if(request!==rankRequest)return;summary.textContent=data.me?'Your rank: #'+data.me.rank+' of '+data.total+' players':data.total+' players · finish this stage to join';
-        if(!data.rows.length){rankingText(rows,'p','No results yet. Set the first record!');return;}
-        const table=document.createElement('table'),thead=document.createElement('thead'),head=document.createElement('tr');['Rank','Player','Swaps','Time'].forEach(value=>rankingText(head,'th',value));thead.appendChild(head);table.appendChild(thead);const tbody=document.createElement('tbody');for(const row of data.rows){const tr=document.createElement('tr');if(row.isMe)tr.className='my-rank';['#'+row.rank,row.name+(row.isMe?' (you)':''),row.moves,(row.milliseconds/1000).toFixed(1)+'s'].forEach(value=>rankingText(tr,'td',value));tbody.appendChild(tr)}table.appendChild(tbody);rows.appendChild(table);
-      }catch(e){if(request===rankRequest){summary.textContent='Ranking unavailable';const retry=rankingText(rows,'button','Try again');retry.onclick=loadRanking;}}
-    }
-    function openRanking(){document.getElementById('rankMode').value=level;document.getElementById('rankStage').value=String(stage);document.getElementById('rankingDialog').showModal();loadRanking();}
-    for(let n=1;n<=24;n++){const option=document.createElement('option');option.value=n;option.textContent='Stage '+n;document.getElementById('rankStage').appendChild(option)}
-    document.getElementById('rankOpen').onclick=openRanking;
-    document.getElementById('rankClose').onclick=()=>document.getElementById('rankingDialog').close();
-    document.getElementById('rankMode').onchange=loadRanking;document.getElementById('rankStage').onchange=loadRanking;
-    const menuRank=document.createElement('button');menuRank.textContent='🏆 Leaderboard';menuRank.className='menu-rank';menuRank.onclick=openRanking;const menuTools=document.createElement('div');menuTools.className='menu-tools';menuTools.appendChild(menuRank);const statsButton=document.createElement('button');statsButton.className='menu-stats';statsButton.textContent='Statistics';statsButton.onclick=()=>{document.getElementById('statsDialog').showModal();loadStats()};menuTools.appendChild(statsButton);picker.appendChild(menuTools);visitPromise=recordActivity('visit');
-    if(!ONLINE_FEATURES){menuTools.style.display='none';document.getElementById('rankOpen').style.display='none';}
+    let usedHint = false, startRequest = 0;
 
     function clickFx(el){
       try{
@@ -1495,7 +1407,6 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
       if(locked.every(Boolean) && playing){
         playing=false;
         stopMusic();
-        submitRanking();
         clearInterval(clockTimer);
         const secs = Math.max(1, Math.floor((Date.now()-playStart)/1000));
         const par = SIZE===3?45:SIZE===4?75:110;
@@ -1665,10 +1576,7 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
       if(storyMode){try{await requireStoryImage(n);}catch(e){showImageLoadError(n);return;}if(request!==startRequest)return;}
       playing=false;
       stopMusic();
-      const round=customPlay?null:await beginRankedRound(mode,n);
-      if(request!==startRequest)return;
-      onlineRound=round;moveLog=[];usedHint=false;
-      document.getElementById('rankStatus').textContent='';document.getElementById('rankStatus').onclick=null;
+      usedHint=false;
       sessionId += 1;
       stage=n; SIZE=LEVELS[level].size; selected=null; playing=false; boardIntroActive=false; undoSnapshot=null;undoUsed=false; hintBusy=false; hintCooldown=false; setHintEnabled(true);
       document.getElementById("playTitle").textContent = customPlay ? "My photo" : storyMode ? n+". "+STORY_DATA.chapters[n-1][0] : ("Stage "+n);
@@ -1703,7 +1611,6 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
       // Start every puzzle with zero correct pieces, including the first stage.
       startingWrong = ids.length;
       do { tiles = shuffle(ids); } while(tiles.some((piece,slot)=>piece===slot));
-      if(round) tiles=round.tiles.slice();
       startingMinimum=minimumSwaps(tiles);
       updateStarGuide();
       startingWrong=tiles.filter((piece,i)=>piece!==i).length;
@@ -1718,7 +1625,6 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
       }
       paint();
       show(play);
-      Promise.resolve(visitPromise).then(()=>recordActivity('round_start'));
       try { hideGuideZoom(); } catch(e) {}
       showBoardIntro(square);
     }
@@ -1754,7 +1660,6 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
       const a=selected; selected=null;
       if(tiles[slot]===slot){ locked[slot]=true; selected=a; lockCorrect(); paint(); return; }
       undoSnapshot={tiles:tiles.slice(),locked:locked.slice(),score,combo};
-      moveLog.push([a,slot]);
       playSwapSound();
       const t=tiles[a]; tiles[a]=tiles[slot]; tiles[slot]=t;
       moveCount += 1;
@@ -1966,9 +1871,10 @@ const STORY_TEST_MODE=!window.AndroidAds && new URLSearchParams(window.location.
       };
       reader.readAsDataURL(f);
     }
-    document.getElementById("photoFile").addEventListener("change", onPickPhoto);
+    if(window.IS_ANDROID_APP){ ["photoFile","photoFileTop","photoMenu"].forEach(id=>{const n=document.getElementById(id);if(n&&id!=="photoMenu")n.remove();}); document.body.classList.add("android-app"); }
+    else { document.getElementById("photoFile").addEventListener("change", onPickPhoto);
     const pft=document.getElementById("photoFileTop");
-    if(pft) pft.addEventListener("change", onPickPhoto);
+    if(pft) pft.addEventListener("change", onPickPhoto); }
 
     document.querySelectorAll("[data-photosize]").forEach((btn) => {
       btn.onclick = () => {
@@ -2086,8 +1992,19 @@ function earnedBadge(difficulty){return difficulty!=='tiny'&&storyDoneFor(diffic
 let speechToken=0,speechDoneCb=null,speechSafety=null;
 function finishSpeech(tok,spoke=true){if(tok!==speechToken)return;const cb=speechDoneCb;speechDoneCb=null;clearTimeout(speechSafety);speechSafety=null;if(cb)cb(spoke);}
 window.onStorySpeechDone=id=>finishSpeech(Number(id),true);
+window.onTtsEnd=(id,ok)=>finishSpeech(Number(id),ok!==false&&ok!=='false');
+function ttsLang(){return (window.I18N_SPEECH||{})[gameLang]||gameLang||'en-US';}
+function narrationSupported(){try{if(window.AndroidTTS)return !!(AndroidTTS.isAvailable&&AndroidTTS.isAvailable(ttsLang()));}catch(e){return false;}
+ if(!window.speechSynthesis||!window.SpeechSynthesisUtterance)return false;
+ const v=window.speechSynthesis.getVoices();if(!v.length)return true;const base=String(gameLang||'en').toLowerCase().split('-')[0];
+ return v.some(x=>x.lang.toLowerCase().replace('_','-').split('-')[0]===base);}
+function syncTtsUi(){const ok=narrationSupported();document.body.classList.toggle('no-tts',!ok);return ok;}
+window.syncTtsUi=syncTtsUi;window.narrationSupported=narrationSupported;
+try{if(window.speechSynthesis&&!window.AndroidTTS)window.speechSynthesis.addEventListener('voiceschanged',syncTtsUi);}catch(e){}
+window.onTtsReady=syncTtsUi;
+document.addEventListener('DOMContentLoaded',syncTtsUi);setTimeout(syncTtsUi,0);
 window.onStorySpeechFailed=id=>finishSpeech(Number(id),false);
-function stopNarration(){speechToken++;speechDoneCb=null;clearTimeout(speechSafety);speechSafety=null;try{if(window.AndroidAds&&AndroidAds.stopStorySpeech)AndroidAds.stopStorySpeech();if(window.speechSynthesis)window.speechSynthesis.cancel();}catch(e){}}
+function stopNarration(){speechToken++;speechDoneCb=null;clearTimeout(speechSafety);speechSafety=null;try{if(window.AndroidTTS&&AndroidTTS.stop)AndroidTTS.stop();if(window.speechSynthesis&&!window.AndroidTTS)window.speechSynthesis.cancel();}catch(e){}}
 let narrationOn=readProgress('lsj-story-narration')!=='0';
 // onDone(spoke): called once when speech ends (spoke=true) or could not start (spoke=false). Never called if stopNarration() cancels it.
 function narrateStory(text,explicit=false,onDone=null){
@@ -2097,10 +2014,9 @@ function narrateStory(text,explicit=false,onDone=null){
  const tok=speechToken;speechDoneCb=onDone;
  speechSafety=setTimeout(()=>finishSpeech(tok,true),String(text).length*90+3000);
  const fail=()=>finishSpeech(tok,false);
- try{if(window.AndroidAds&&(AndroidAds.speakStoryWithId||AndroidAds.speakStory)){if(AndroidAds.setStoryLanguage)AndroidAds.setStoryLanguage(gameLang);if(AndroidAds.speakStoryWithId)AndroidAds.speakStoryWithId(text,String(tok));else{AndroidAds.speakStory(text);}return;}
- if(!window.speechSynthesis){if(explicit)alert('อุปกรณ์นี้ยังไม่มีเสียงอ่านนิทาน');fail();return;}
+ try{if(!narrationSupported()){fail();return;}
+ if(window.AndroidTTS){AndroidTTS.speak(String(text),ttsLang(),String(tok));return;}
  const say=()=>{if(tok!==speechToken)return;const voices=window.speechSynthesis.getVoices();const norm=v=>v.lang.toLowerCase().replace('_','-');let voice=voices.find(v=>norm(v).startsWith(gameLang));const fallback=!voice&&voices.length?voices.find(v=>norm(v).startsWith('en')):null;
-  if(!voice&&voices.length&&explicit)alert('ยังไม่พบเสียงภาษาไทยบนอุปกรณ์นี้ อ่านเนื้อเรื่องบนหน้าจอได้ตามปกติ');
   const utterance=new SpeechSynthesisUtterance(text);utterance.lang=(window.I18N_SPEECH||{})[gameLang]||'en-US';if(voice)utterance.voice=voice;else if(fallback){utterance.voice=fallback;utterance.lang=fallback.lang;}utterance.rate=.9;
   utterance.onend=()=>finishSpeech(tok,true);utterance.onerror=()=>finishSpeech(tok,true);
   window._storyUtterance=utterance;window.speechSynthesis.resume();window.speechSynthesis.speak(utterance);};
@@ -2154,7 +2070,7 @@ const UI_TEXTS=[["ความเป็นส่วนตัว", "Privacy", "Pr
 ['ห้องสมุดนิทาน','Story Library','Biblioteca de cuentos'],['เลือกเรื่อง แล้วต่อภาพทีละเหตุการณ์','Choose a story and piece together each moment','Elige un cuento y completa cada escena'],['นิทานเรื่องใหม่','A new story','Un nuevo cuento'],['เร็ว ๆ นี้','Coming soon','Próximamente'],['เปิดเรื่อง →','Open story →','Abrir cuento →'],['‹ เลือกเรื่อง','‹ Choose a story','‹ Elegir cuento'],['เลือกเรื่อง','Choose a story','Elegir cuento'],['เลือกระดับเพื่อเข้าสู่ด่านย่อย','Choose a difficulty to see the stages','Elige la dificultad para ver los niveles'],['ง่าย','Easy','Fácil'],['กลาง','Medium','Medio'],['ยาก','Hard','Difícil'],['Back','Back','Volver'],['ปลดล็อกด่านตามลำดับ · ย้อนเล่นด่านที่ผ่านแล้วได้','Unlock stages in order · Replay cleared stages','Desbloquea en orden · Repite niveles superados'],['ความคืบหน้าแยกแต่ละระดับ','Progress is separate for each difficulty','El progreso se guarda por dificultad'],['ความพยายามจะเอาชนะความเร็วได้หรือไม่?','Can perseverance beat speed?','¿Puede la constancia vencer a la velocidad?'],['การผจญภัยเพื่อนำแสงกลับคืนสู่ป่า','An adventure to bring the forest’s light home','Una aventura para devolver la luz al bosque'],
 ['โหลดเกม...','Loading game...','Cargando el juego...'],['กำลังโหลดไฟล์...','Loading files...','Cargando archivos...'],['กำลังเตรียมด่าน...','Preparing stages...','Preparando niveles...'],['พร้อมแล้ว!','Ready!','¡Listo!'],['จดจำภาพ… เตรียมต่อปริศนา','Remember the picture… Get ready','Recuerda la imagen… Prepárate'],['ข้ามเอฟเฟกต์ ›','Skip effect ›','Saltar efecto ›'],['⏱ เวลา','⏱ Time','⏱ Tiempo'],['🧩 ชิ้นภาพ','🧩 Pieces','🧩 Piezas'],['⭐ คะแนน','⭐ Score','⭐ Puntos'],['เวลา','Time','Tiempo'],['คะแนน','Score','Puntos'],['ชิ้นภาพ','Pieces','Piezas'],['💡 ตัวช่วย ▶AD','💡 Helpers ▶AD','💡 Ayudas ▶AD'],['💡 ช่วยวาง ▶AD','💡 Helpers ▶AD','💡 Ayudas ▶AD'],['💡 ช่วยวาง','💡 Helpers','💡 Ayudas'],['เลือกตัวช่วย','Choose a helper','Elige una ayuda'],['ดูโฆษณารับรางวัลก่อนใช้ตัวช่วยแต่ละครั้ง','Watch a rewarded ad to use a helper','Mira un anuncio con recompensa para usar una ayuda'],['▶ ดูโฆษณา · ช่วยวาง 1 ชิ้น','▶ Watch ad · Place 1 piece','▶ Ver anuncio · Colocar 1 pieza'],['▶ ดูโฆษณา · ดูภาพใหญ่ 5 วินาที','▶ Watch ad · Full picture for 5 seconds','▶ Ver anuncio · Imagen completa durante 5 segundos'],['กลับไปเล่น','Keep playing','Seguir jugando'],['ตัวช่วยวางภาพต้องดูโฆษณารับรางวัลก่อน เว็บทดสอบยังไม่มีโฆษณาจริง จึงไม่ให้ตัวช่วยอัตโนมัติ','Helpers require an earned ad reward. This web preview has no real ads, so no helper is granted.','Las ayudas requieren la recompensa de un anuncio. Esta prueba web no tiene anuncios reales y no concede ayudas.'],
 ['ผ่านด่านแล้ว','Stage cleared','Nivel superado'],['จบนิทานแล้ว 🏆','Story complete 🏆','Cuento completado 🏆'],['กลับหน้าด่าน','Back to stages','Volver a los niveles'],['ด่านถัดไป','Next stage','Siguiente nivel'],['เล่นอีกครั้ง','Play again','Jugar otra vez'],['ข้ามฉาก','Skip scene','Saltar escena'],['ฉากต่อไป','Next scene','Siguiente escena'],['ภาพที่ต่อสำเร็จ','Completed picture','Imagen completada'],['🏅 ได้รับตราจบเรื่องแล้ว','🏅 Story completion badge earned','🏅 Insignia del cuento conseguida'],['📖 สมุดนิทานและตรารางวัล','📖 Story album & badges','📖 Álbum e insignias'],['📖 สมุดนิทานของฉัน','📖 My story album','📖 Mi álbum de cuentos'],['ปิด ✕','Close ✕','Cerrar ✕'],['‹ ทุกภาพ','‹ All pictures','‹ Todas las imágenes'],['‹ ก่อนหน้า','‹ Previous','‹ Anterior'],['ถัดไป ›','Next ›','Siguiente ›'],['🔊 ฟังเรื่อง','🔊 Listen','🔊 Escuchar'],['ผ่านด่านเพื่อเก็บภาพ','Clear the stage to collect this picture','Supera el nivel para conseguir la imagen'],['เปิด','On','Activado'],['ปิด','Off','Desactivado'],['ช้างน้อยไม่ยอมแพ้','Persevering Little Elephant','Elefantita perseverante'],['นักเดินทางใจมั่น','Steadfast Explorer','Explorador constante'],['ช้างทองยอดนักต่อ','Golden Puzzle Elephant','Elefanta dorada del puzle'],['ผู้จุดแสงดวงแรก','First Light Keeper','Guardián de la primera luz'],['สหายแห่งป่าเวทมนตร์','Friend of the Magic Forest','Amigo del bosque mágico'],['มังกรทองแห่งความเมตตา','Golden Dragon of Kindness','Dragón dorado de la bondad'],['🐢 นักเดินทางนิทาน','🐢 Story Explorer','🐢 Explorador de cuentos'],['🐉 นักเดินทางนิทาน','🐉 Story Explorer','🐉 Explorador de cuentos'],['อุปกรณ์นี้ยังไม่มีเสียงอ่านนิทาน','Narration is unavailable on this device','La narración no está disponible en este dispositivo'],['ยังไม่พบเสียงภาษาไทยบนอุปกรณ์นี้ อ่านเนื้อเรื่องบนหน้าจอได้ตามปกติ','No voice for this language is installed. You can still read the story.','No hay una voz instalada para este idioma. Puedes seguir leyendo el cuento.'],
-['🧪 โหมดทดสอบ · เปิดครบ16ด่าน โดยไม่ถือว่าผ่านแล้ว','🧪 Test mode · All 16 stages open, not marked cleared','🧪 Modo de prueba · 16 niveles abiertos sin marcarlos superados'],['🧪 เล่นด่านสุดท้าย (16) ทันที','🧪 Play the final stage (16)','🧪 Jugar el último nivel (16)'],['📖 ดูภาพเล่าเรื่องครบ16ฉาก','📖 View all 16 story scenes','📖 Ver las 16 escenas del cuento'],['ตัวอย่างแบนเนอร์','Banner preview','Vista previa del banner'],['ตัวอย่างตำแหน่ง · ไม่ใช่โฆษณา Google','Layout example · not a Google ad','Ejemplo de ubicación · no es un anuncio de Google'],['ตัวอย่างโฆษณาเต็มจอ','INTERSTITIAL PREVIEW','VISTA PREVIA DEL ANUNCIO'],['พื้นที่โฆษณาเต็มจอ','Full-screen ad area','Espacio de anuncio a pantalla completa'],['ปิด','Close','Cerrar'],['🎁 โฆษณารับรางวัล','🎁 Rewarded ad','🎁 Anuncio con recompensa'],['กำลังดูโฆษณาเพื่อรับรางวัล...','Watching ad for your reward...','Viendo el anuncio para obtener la recompensa...'],['ชื่อผู้เล่น','Your player name','Tu nombre de jugador'],['บันทึกและเล่น','Save & play','Guardar y jugar'],['เล่นโดยไม่จัดอันดับ','Play without ranking','Jugar sin clasificación'],['รูปภาพของฉัน','My photo puzzle','Mi foto como puzle'],['เลือกระดับแล้วเล่น','Pick a mode and play','Elige un modo y juega'],['ผลการเล่น','Stage result','Resultado del nivel'],['ปลดล็อกภาพถัดไปแล้ว','Next picture unlocked','Siguiente imagen desbloqueada'],['ผ่านครบแล้ว','All done','Todo completado'],['ต่อภาพสำเร็จ','Photo puzzle complete','Imagen completada'],['ด่านที่ผ่านแล้ว','Cleared stages','Niveles superados'],['เปิดเสียง','Enable sound','Activar sonido'],['ปิดเสียง','Mute sound','Silenciar'],['ดูโฆษณารับตัวช่วยวางภาพ','Watch ad for a puzzle helper','Ver anuncio para una ayuda'],['รูปปริศนากำลังกระจายลงกระดาน','Puzzle pieces are moving onto the board','Las piezas se colocan en el tablero']
+['🧪 โหมดทดสอบ · เปิดครบ16ด่าน โดยไม่ถือว่าผ่านแล้ว','🧪 Test mode · All 16 stages open, not marked cleared','🧪 Modo de prueba · 16 niveles abiertos sin marcarlos superados'],['🧪 เล่นด่านสุดท้าย (16) ทันที','🧪 Play the final stage (16)','🧪 Jugar el último nivel (16)'],['📖 ดูภาพเล่าเรื่องครบ16ฉาก','📖 View all 16 story scenes','📖 Ver las 16 escenas del cuento'],['ตัวอย่างแบนเนอร์','Banner preview','Vista previa del banner'],['ตัวอย่างตำแหน่ง · ไม่ใช่โฆษณา Google','Layout example · not a Google ad','Ejemplo de ubicación · no es un anuncio de Google'],['ตัวอย่างโฆษณาเต็มจอ','INTERSTITIAL PREVIEW','VISTA PREVIA DEL ANUNCIO'],['พื้นที่โฆษณาเต็มจอ','Full-screen ad area','Espacio de anuncio a pantalla completa'],['ปิด','Close','Cerrar'],['🎁 โฆษณารับรางวัล','🎁 Rewarded ad','🎁 Anuncio con recompensa'],['กำลังดูโฆษณาเพื่อรับรางวัล...','Watching ad for your reward...','Viendo el anuncio para obtener la recompensa...'],['รูปภาพของฉัน','My photo puzzle','Mi foto como puzle'],['เลือกระดับแล้วเล่น','Pick a mode and play','Elige un modo y juega'],['ผลการเล่น','Stage result','Resultado del nivel'],['ปลดล็อกภาพถัดไปแล้ว','Next picture unlocked','Siguiente imagen desbloqueada'],['ผ่านครบแล้ว','All done','Todo completado'],['ต่อภาพสำเร็จ','Photo puzzle complete','Imagen completada'],['ด่านที่ผ่านแล้ว','Cleared stages','Niveles superados'],['เปิดเสียง','Enable sound','Activar sonido'],['ปิดเสียง','Mute sound','Silenciar'],['ดูโฆษณารับตัวช่วยวางภาพ','Watch ad for a puzzle helper','Ver anuncio para una ayuda'],['รูปปริศนากำลังกระจายลงกระดาน','Puzzle pieces are moving onto the board','Las piezas se colocan en el tablero']
 ];
 const UI_LOOKUP=new Map();for(const row of UI_TEXTS)for(const value of row)if(!UI_LOOKUP.has(value))UI_LOOKUP.set(value,row);
 const LANGS=window.I18N_LANGS||['th','en','es'];
@@ -2205,9 +2121,10 @@ const languageObserver=new MutationObserver(()=>{if(translationQueued)return;tra
 function applyStoryLanguage(){const story=STORY_CATALOG[STORY_DATA.id];STORY_DATA.title=story.titles[gameLang];STORY_DATA.chapters=story.locales[gameLang];document.documentElement.lang=gameLang;applyDir();try{if(window.AndroidAds&&AndroidAds.setStoryLanguage)AndroidAds.setStoryLanguage(gameLang);}catch(e){}}
 function selectStory(id){stopNarration();const story=STORY_CATALOG[id];if(!story)return;Object.assign(STORY_DATA,{id:story.id,title:story.titles[gameLang],chapters:story.locales[gameLang],images:story.images});STORY_IMGS.splice(0,STORY_IMGS.length,...story.images.map(src=>{const im=new Image();im.src=src;return im;}));storyPage=1;refreshStoryDetail();}
 function refreshStoryDetail(){const story=STORY_CATALOG[STORY_DATA.id],detail=document.getElementById('storyDetail');detail.querySelector('h1').textContent=STORY_DATA.title;detail.querySelector('small').textContent=gameLang==='th'?`เรื่องที่ ${story.number} · ${storyCount()} ด่าน`:gameLang==='es'?`Cuento ${story.number} · ${storyCount()} niveles`:TRF('Story {0} · {1} stages',story.number,storyCount());detail.querySelector('.story-cover').src=story.cover||story.images[0];detail.querySelector('.story-cover').alt=STORY_DATA.title;detail.querySelector('p').textContent=story.descriptions[gameLang]+' '+translateText('เลือกระดับเพื่อเข้าสู่ด่านย่อย');refreshStoryProgress();}
-function updateLanguage(lang){if(!LANGS.includes(lang))return;stopNarration();gameLang=lang;try{localStorage.setItem('lsj-story-lang',lang)}catch(e){}applyStoryLanguage();refreshStoryDetail();renderStoryBooks();renderLibraryPage();refreshContinueStory();if(!picker.classList.contains('hide'))renderGrid();setNarrationLabel();translateTree();document.querySelectorAll('[data-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===lang)));document.title=(window.GAME_CONFIG&&GAME_CONFIG.title)||'Story Jigsaw Tales';applyDir();}
+function updateLanguage(lang){if(!LANGS.includes(lang))return;stopNarration();gameLang=lang;try{localStorage.setItem('lsj-story-lang',lang)}catch(e){}applyStoryLanguage();refreshStoryDetail();renderStoryBooks();renderLibraryPage();refreshContinueStory();if(!picker.classList.contains('hide'))renderGrid();setNarrationLabel();translateTree();document.querySelectorAll('[data-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===lang)));document.title=((window.GAME_CONFIG&&GAME_CONFIG.title)||'Moonpiece Tales')+(lang==='th'?' · มูนพีซ นิทานจิ๊กซอว์':'');applyDir();if(window.syncTtsUi)setTimeout(syncTtsUi,0);}
 function renderStoryBooks(){for(const story of Object.values(STORY_CATALOG)){const card=document.getElementById(({lantern16:'storyStart',moonturtle16:'storyDragon',ricepot16:'storyTitan',kite16:'storyAirship',seasons16:'storyMermaid',snowfox16:'storySkyDragon'})[story.id]);if(card){card.querySelector('strong').textContent=story.titles[gameLang];card.querySelector('img').alt=story.titles[gameLang];}}}
 const languageBar=document.createElement('div');languageBar.id='languageBar';languageBar.setAttribute('aria-label','Language');languageBar.innerHTML='<span>🌐</span>'+LANGS.map(l=>`<button data-language="${l}" lang="${l}"${l==='ar'?' dir="rtl"':''} data-ui-localized>${(window.I18N_NAMES||{})[l]||l}</button>`).join('');document.querySelector('.story-hub').prepend(languageBar);languageBar.querySelectorAll('button').forEach(b=>b.onclick=()=>updateLanguage(b.dataset.language));
+if(gameLang==='th')document.title=((window.GAME_CONFIG&&GAME_CONFIG.title)||'Moonpiece Tales')+' · มูนพีซ นิทานจิ๊กซอว์';
 const originalAlert=window.alert.bind(window);window.alert=message=>originalAlert(translateText(String(message)));
 applyStoryLanguage();refreshStoryDetail();renderStoryBooks();document.querySelectorAll('[data-language]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.language===gameLang)));translateTree();languageObserver.observe(document.body,{subtree:true,childList:true,characterData:true});
 
@@ -2266,7 +2183,7 @@ nativeBanner(false);
  const h=document.createElement('h2');h.textContent=storyLabel('ความเป็นส่วนตัว','Privacy','Privacidad');
  const p=document.createElement('p');p.textContent=storyLabel('ความคืบหน้า ดาว และภาษาที่เลือกบันทึกบนอุปกรณ์ ไม่ต้องสมัครบัญชี เกมไม่ส่งภาพที่เลือกจากเครื่องไปยังผู้พัฒนา โฆษณาในแอป Android ใช้ Google AdMob ซึ่งอาจประมวลผลข้อมูลอุปกรณ์ การโต้ตอบ และข้อมูลการวินิจฉัยตามการตั้งค่าความยินยอม การลบข้อมูลแอปจะลบความคืบหน้าบนอุปกรณ์นี้ด้วย','Progress, stars and language are saved on your device. No account is required. Photos selected from your device are not uploaded to the developer. Android ads use Google AdMob, which may process device, interaction and diagnostic data according to consent settings. Clearing app data also removes local progress.','El progreso, las estrellas y el idioma se guardan en el dispositivo. No necesitas una cuenta. Las fotos elegidas no se envían al desarrollador. Los anuncios de Android usan Google AdMob, que puede tratar datos del dispositivo, interacciones y diagnóstico según el consentimiento. Borrar los datos de la app elimina el progreso local.');
  const options=document.createElement('button');options.textContent=storyLabel('จัดการความยินยอมโฆษณา','Ad privacy choices','Opciones de privacidad publicitaria');options.hidden=!(window.AndroidAds&&AndroidAds.showPrivacyOptions);options.onclick=()=>AndroidAds.showPrivacyOptions();
- const link=document.createElement('button');link.textContent=storyLabel('นโยบายความเป็นส่วนตัว','Privacy Policy','Política de privacidad');link.onclick=()=>{if(window.AndroidAds&&AndroidAds.openPrivacyPolicy)AndroidAds.openPrivacyPolicy();else window.open(PRIVACY_POLICY_URL+'?lang='+encodeURIComponent(gameLang),'_blank','noopener');};
+ const link=document.createElement('button');link.textContent=storyLabel('นโยบายความเป็นส่วนตัว','Privacy Policy','Política de privacidad');link.onclick=()=>{if(window.AndroidApp&&AndroidApp.openPrivacyPolicy)AndroidApp.openPrivacyPolicy(gameLang);else if(window.AndroidAds&&AndroidAds.openPrivacyPolicy)AndroidAds.openPrivacyPolicy();else window.open(PRIVACY_POLICY_URL+'?lang='+encodeURIComponent(gameLang),'_blank','noopener');};
  const close=document.createElement('button');close.textContent=storyLabel('ปิด','Close','Cerrar');close.onclick=()=>dialog.close();dialog.append(h,p,options,link,close);document.body.append(dialog);dialog.addEventListener('close',()=>dialog.remove(),{once:true});dialog.showModal();};
 })();
 function updateUndoControl(){const b=document.getElementById('undoMove');if(b)b.disabled=!playing||boardIntroActive||rewardPreviewActive||hintBusy||undoUsed||!undoSnapshot;}

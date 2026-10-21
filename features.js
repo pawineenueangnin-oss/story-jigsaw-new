@@ -1,4 +1,4 @@
-// Story Jigsaw Tales — add-on features: gentle hint, storybook mode, stickers,
+// Moonpiece Tales — add-on features: gentle hint, storybook mode, stickers,
 // text size, ad placement hooks (no SDK on web) and offline service worker.
 (function(){
 'use strict';
@@ -179,7 +179,7 @@ new MutationObserver(()=>isolateNums(document.body)).observe(document.documentEl
 isolateNums(document.body);
 
 /* ---------- 5. Offline play: service worker with versioned cache ---------- */
-if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1')&&!/[?&]nosw=1/.test(location.search)){
+if(!window.IS_ANDROID_APP&&'serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1')&&!/[?&]nosw=1/.test(location.search)){
  // A returning user may still be controlled by an older worker: when the new one takes over,
  // reload once into the new version (right away on menus/loader, otherwise at the next menu).
  const hadController=!!navigator.serviceWorker.controller;let reloading=false,pendingReload=false;

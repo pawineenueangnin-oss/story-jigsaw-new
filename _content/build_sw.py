@@ -1,7 +1,7 @@
 # Generates sw.js with a precache list of every game asset and a content-hash version.
 import os,hashlib,json
 root=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-skip_dirs={'.git','_content','_review','_shots','node_modules','.github'}
+skip_dirs={'.git','_content','_review','_shots','store-assets','node_modules','.github'}
 exts={'.html','.js','.css','.webp','.png','.jpg','.jpeg','.ico','.webmanifest','.json','.mp3','.ogg','.svg','.woff2'}
 files=[]
 for d,ds,fs in os.walk(root):

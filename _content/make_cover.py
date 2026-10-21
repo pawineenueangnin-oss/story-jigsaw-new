@@ -7,7 +7,7 @@ y0=630;og=s.crop((0,y0,W,y0+H)).convert('RGBA')
 sh=Image.new('RGBA',(W,H),(0,0,0,0));g=ImageDraw.Draw(sh)
 for y in range(230):g.line([(0,y),(W,y)],fill=(30,15,40,int(150*(1-y/230))))
 og=Image.alpha_composite(og,sh);d=ImageDraw.Draw(og)
-title='Story Jigsaw Tales'
+title='Moonpiece Tales'
 f=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf',78)
 sub=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',32)
 tw=d.textlength(title,font=f)
