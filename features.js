@@ -180,6 +180,12 @@ isolateNums(document.body);
 
 /* ---------- 5. Offline play: service worker with versioned cache ---------- */
 if('serviceWorker' in navigator&&(location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1')&&!/[?&]nosw=1/.test(location.search)){
- window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').then(r=>{r.update&&r.update();}).catch(()=>{});});
+ // A returning user may still be controlled by an older worker: when the new one takes over,
+ // reload once into the new version (right away on menus/loader, otherwise at the next menu).
+ const hadController=!!navigator.serviceWorker.controller;let reloading=false,pendingReload=false;
+ const doReload=()=>{if(reloading)return;reloading=true;location.reload();};
+ navigator.serviceWorker.addEventListener('controllerchange',()=>{if(!hadController)return;if(typeof playing!=='undefined'&&playing&&!document.getElementById('play').classList.contains('hide'))pendingReload=true;else doReload();});
+ const baseShowSW=show;show=function(el){baseShowSW(el);if(pendingReload&&el===document.getElementById('menu'))doReload();};
+ window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js',{updateViaCache:'none'}).then(r=>{r.update&&r.update();if(r.waiting)r.waiting.postMessage('skipWaiting');}).catch(()=>{});});
 }
 })();
